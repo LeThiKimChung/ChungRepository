@@ -51,7 +51,8 @@ rxversion="7.2">
 			reportcompress="False"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			showinvisiblechars="True">
 			</testsuite>
 			<testcase
 			datasource="CsvConnector_Credentials"
@@ -222,6 +223,44 @@ delete it.]]>
 			ref="81c30192-03a8-4968-9c9a-3f62e396872a"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="70576122-82a6-4784-858d-cc26f078f16c"
+			name="AutoCreateNewIssueIfTestCaseFails"
+			ref="de17f33e-345f-416f-9f58-505b5e34aae3"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="ProjectKey"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="2dc0bbb3-c44a-42b6-a695-9fb1abff8d84"
+					variablename="JiraProjectKey">
+					</var>
+					<var
+					dataname="Summary"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="e16ac939-1d71-4936-8009-de50e23325ca"
+					variablename="JiraSummary">
+					</var>
+					<var
+					dataname="Label"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="ab382eab-9609-430a-b18e-46b19a493a5f"
+					variablename="JiraLabels">
+					</var>
+					<var
+					dataname="Issue Type"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="d9248964-3f28-4abe-a5a8-324c190cf2f4"
+					variablename="JiraIssueType">
+					</var>
+					<var
+					dataname="Description"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="835f55d5-961e-4f62-aae1-0aa992c725ef"
+					variablename="JiraDescription">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="72a49af0-82c9-4ea2-ae23-bce830bcd790"
 			name="setup">
@@ -241,6 +280,7 @@ delete it.]]>
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datasource="Excel_Jira"
 			id="7be436af-5f3e-4944-97fa-2669c6b0c726"
 			name="AddNewEntry">
 				<description>
@@ -273,6 +313,32 @@ connector in three different ways:]]>
 					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
 					variableid="353a400f-94b6-4cef-9c83-b7fb02237d16"
 					variablename="varTitle">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="889d253d-87f1-4d01-a716-a9ae24ccd730"
+			name="InitializeJiraReporter"
+			ref="0c593212-390b-4ec4-afa2-c63525001f3c"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Password"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="d4637164-3891-47a1-a96e-77396f53f387"
+					variablename="JiraPassword">
+					</var>
+					<var
+					dataname="ServerURL"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="2d58eee0-06de-4d7e-9c04-dca5cd7a1a91"
+					variablename="JiraServerURL">
+					</var>
+					<var
+					dataname="UserName"
+					datasourceid="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+					variableid="87147480-a368-4c8d-935a-ac9928641b17"
+					variablename="JiraUserName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -428,6 +494,10 @@ connector in three different ways:]]>
 						<setup
 						id="72a49af0-82c9-4ea2-ae23-bce830bcd790"
 						name="setup">
+							<testmodule
+							id="889d253d-87f1-4d01-a716-a9ae24ccd730"
+							name="InitializeJiraReporter">
+							</testmodule>
 							<modulegroup
 							id="41f4b0ad-8ea5-4913-855f-743c55265a32"
 							name="StartAndLogin">
@@ -436,6 +506,10 @@ connector in three different ways:]]>
 						<testcase
 						id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23"
 						name="AddEntryByRecording">
+							<testmodule
+							id="fd1de731-18ce-4ff4-a624-accd706fade6"
+							name="AddCredentialEntry">
+							</testmodule>
 							<testmodule
 							id="3885670f-b123-440f-9f44-16a0e48f48df"
 							name="AddEntry">
@@ -448,14 +522,14 @@ connector in three different ways:]]>
 							id="13de641d-6f6e-4dff-ad15-d16a5611166e"
 							name="DeleteEntry">
 							</testmodule>
+							<testmodule
+							id="70576122-82a6-4784-858d-cc26f078f16c"
+							name="AutoCreateNewIssueIfTestCaseFails">
+							</testmodule>
 						</testcase>
 						<testcase
 						id="bda41cf2-9036-45da-8f32-a82d2116f53a"
 						name="AddEntryByCodeModule">
-							<testmodule
-							id="fd1de731-18ce-4ff4-a624-accd706fade6"
-							name="AddCredentialEntry">
-							</testmodule>
 							<testmodule
 							id="51b00065-850e-4bee-8240-614fb40334ee"
 							name="ValidateEntry">
@@ -605,14 +679,67 @@ connector in three different ways:]]>
 				Passwords.csv
 			</file>
 		</DataSource>
+		<DataSource
+		filename="D:\CHUNG\HOCTAP\DOAN\Ranorex\Ranorex_Jira\JiraTestData.xlsx"
+		id="33ae841b-8fbb-4a95-9ae5-4a6079907519"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="Excel_Jira"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Sheet1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Password
+				</column>
+				<column>
+					ServerURL
+				</column>
+				<column>
+					UserName
+				</column>
+				<column>
+					Description
+				</column>
+				<column>
+					Issue Type
+				</column>
+				<column>
+					Label
+				</column>
+				<column>
+					ProjectKey
+				</column>
+				<column>
+					Summary
+				</column>
+				<column>
+					Enviroment
+				</column>
+				<column>
+					IssuePriority
+				</column>
+				<column>
+					QueryToConnect
+				</column>
+				<column>
+					RxAutomationFieldName
+				</column>
+				<column>
+					StateClose
+				</column>
+				<column>
+					StateReopen
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="MyFirstRunConfig">
 		<testconfiguration
 		name="MyFirstRunConfig">
-			<testcontainer
-			id="35919cb4-ff0a-47d5-8755-346f31078869">
-			</testcontainer>
 			<testcontainer
 			id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23">
 			</testcontainer>
@@ -652,5 +779,20 @@ connector in three different ways:]]>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Atlassian.Jira.dll
+		</reference>
+		<reference>
+			Newtonsoft.Json.dll
+		</reference>
+		<reference>
+			Ranorex_JiraIntegration.dll
+		</reference>
+		<reference>
+			RestSharp.dll
+		</reference>
+		<reference>
+			TechTalk.JiraRestClient.dll
+		</reference>
 	</references>
 </testsuitedoc>

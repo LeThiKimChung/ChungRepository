@@ -73,3 +73,35 @@ C:\Program Files (x86)\Ranorex 7.2\Samples\Desktop\KeePass Sample\KeePassTestSui
 C:\Program Files (x86)\Ranorex 7.2\Samples\Desktop\KeePass Sample\KeePassTestSuite\obj\x86\Debug\KeePassTestSuite.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Ranorex 7.2\Samples\Desktop\KeePass Sample\KeePassTestSuite\obj\x86\Debug\KeePassTestSuite.exe
 C:\Program Files (x86)\Ranorex 7.2\Samples\Desktop\KeePass Sample\KeePassTestSuite\obj\x86\Debug\KeePassTestSuite.pdb
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\Passwords.csv
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePassTestSuite.rxtmg
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\KeePass.chm
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\KeePass.config.xml
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\KeePass.exe
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\KeePass.exe.config
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\License.txt
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\NewDatabase.kdbx
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\XSL\KDBX_DetailsFull.xsl
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\XSL\KDBX_DetailsLite.xsl
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\XSL\KDBX_PasswordsOnly.xsl
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\XSL\KDBX_Styles.css
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\XSL\KDBX_Tabular.xsl
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePass\XSL\TableHeader.gif
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePassTestSuite.rxtst
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePassTestSuite.exe.config
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePassTestSuite.exe
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\KeePassTestSuite.pdb
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\Ranorex_JiraIntegration.dll
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\RestSharp.dll
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\TechTalk.JiraRestClient.dll
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\System.Windows.Interactivity.dll
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\obj\x86\Debug\KeePassTestSuite.csprojResolveAssemblyReference.cache
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\obj\x86\Debug\KeePassTestSuite.exe
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\obj\x86\Debug\KeePassTestSuite.pdb
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\RanorexJiraCli.exe
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\Newtonsoft.Json.dll
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\Newtonsoft.Json.xml
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\RestSharp.xml
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\Atlassian.Jira.dll
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\Atlassian.Jira.pdb
+D:\CHUNG\HOCTAP\DOAN\Ranorex\WEB\ChungRepository\KeePass Sample\KeePassTestSuite\bin\Debug\Atlassian.Jira.xml
