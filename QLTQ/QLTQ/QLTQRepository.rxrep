@@ -1,0 +1,168 @@
+﻿<repository
+name="QLTQRepository"
+id="fdc6d510-55ec-4d47-b6e8-7a99d85f3a45"
+rxversion="6.2">
+	<codegen
+	classname="QLTQRepository"
+	namespace="QLTQ"/>
+	<rootfolder
+	name="Root"
+	id="42b9c0b9-78af-49f7-b3f1-82e36bc68e43"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="FrmLogin"
+		id="b9dbb0db-b244-41ec-9775-69003adf8f38"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@controlname='FrmLogin' and @title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ĐăngNhập"
+			id="3f3cb6ff-e82c-4b5a-9f6d-d66e42bc5e77"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='FrmLogin' and @title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']/container/container/element[@controlname='btdangnhap']/button[@accessiblename='Đăng nhập']"
+			addcaps="button,accessible"
+			refimgid="af63adcf-9a6a-4239-aec2-f2dbba6a8a34">
+				/form[@title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']//element[@controlname='btdangnhap']/button[@accessiblename='&#272;&#259;ng nh&#7853;p']
+			</item>
+			<basepath>
+				/form[@title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="Frmmain"
+		id="80800de4-78f2-45e1-a8f0-f16ce07f3c6f"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@controlname='frmmain']"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="CậpNhậtDanhMục"
+			id="d136a0bc-53c8-4aa1-9f67-133146a4a929"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='frmmain']/container[@controlname='ribbonControl1']/container[@controlname='ഭ']/element/container[2]/button[@accessiblename='Cập nhật danh mục']"
+			addcaps="button,accessible"
+			refimgid="65f231af-e33b-4118-afb5-0f1fdd43d037">
+				/form[@controlname='frmmain']/container[@controlname='ribbonControl1']/container[@controlname='&#3373;']//button[@accessiblename='C&#7853;p nh&#7853;t danh m&#7909;c']
+			</item>
+			<item
+			name="ButtonDivAlignEqcenterWidthEq65XaPhư"
+			id="81e84ef9-7049-4b91-9a00-91a9e1de04a0"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='frmmain']/container[@controlname='ribbonControl1']/container[@controlname='ribbonPanel2']/container[@controlname='ribbonBar2']/element/button[1]"
+			addcaps="button,accessible"
+			refimgid="185937cb-bc77-4e94-a964-2b8b76a5d458">
+				/form[@controlname='frmmain']/container[@controlname='ribbonControl1']/?/?/container[@controlname='ribbonBar2']/element/button[1]
+			</item>
+			<item
+			name="MaXa"
+			id="6b6c8066-7d48-43c3-9f65-fb2bc7a739dc"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='frmmain']/container[@controlname='pnChua']/element/container/container/container[@controlname='pntren']/container[@controlname='groupPanel5']/text[@controlname='txt_maxaphuong']/text[@accessiblerole='Text']"
+			addcaps="text,accessible"
+			refimgid="eec17d5a-32ba-44e2-a8bb-426616da7dab">
+				/form[@controlname='frmmain']/container[@controlname='pnChua']//container[@controlname='pntren']/container[@controlname='groupPanel5']/text[@controlname='txt_maxaphuong']/text[@accessiblerole='Text']
+			</item>
+			<item
+			name="Them"
+			id="e51dca11-6e5b-4992-ba53-0e59e582df6d"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='frmmain']/container[@controlname='pnChua']/element/container/container/container[@controlname='pntren']/container[@controlname='groupPanel6']/element[@controlname='btn_them']/button[@accessiblename='Thêm']"
+			addcaps="button,accessible"
+			refimgid="ffdbe6c5-e795-4f21-9a64-88c477f0f811">
+				/form[@controlname='frmmain']/container[@controlname='pnChua']//container[@controlname='pntren']/container[@controlname='groupPanel6']/?/?/button[@accessiblename='Th&#234;m']
+			</item>
+			<basepath>
+				/form[@controlname='frmmain']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="ThongBao"
+		id="1224d4df-9a2f-418d-9eb1-6275708ae7a7"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Thông báo']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="Meg"
+			id="439702f7-d2bf-4269-a05d-b7b035ab44d5"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@title='Thông báo']/text[@controlid='65535']"
+			addcaps="text,nativewindow"
+			refimgid="cfa5d232-27e2-414e-bfe9-0b9ae436a3e9">
+				/form[@title='Th&#244;ng b&#225;o']/text[@controlid='65535']
+			</item>
+			<item
+			name="ButtonOK"
+			id="9a5d06ef-5c5e-4eee-b5b0-bb28860a0b58"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='Thông báo']/button[@text='OK']"
+			addcaps="button,nativewindow"
+			refimgid="a859951c-3cf9-4595-b493-52132c89ab6d">
+				/form[@title='Th&#244;ng b&#225;o']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Th&#244;ng b&#225;o']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

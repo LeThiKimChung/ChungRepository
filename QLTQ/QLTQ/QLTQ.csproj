@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{9F6D5D94-01E8-4FD5-9675-7CFA40C51FC2}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>QLTQ</RootNamespace>
+    <AssemblyName>QLTQ</AssemblyName>
+    <RanorexVersion>6.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>5ba839ef-0ee6-480e-9fdb-97925d1694e5</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="QLTQ_Chung">
+      <HintPath>..\QLTQ_Chung.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>07649cb4-c390-4c57-bb70-606cc18a47e8</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>bb0ca587-fc8f-4327-86b5-c72178ffb540</id>
+    </Compile>
+    <Compile Include="QLTQRepository.cs">
+      <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
+      <DependentUpon>QLTQRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>97382d02-5153-422e-ab6c-9171f4d9d9fa</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>868bf039-1560-48a3-b006-5ade2ef05249</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>56de14c3-c54f-4144-92f8-46701ef82c31</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>868bf039-1560-48a3-b006-5ade2ef05249</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>26a266ce-7add-46b9-b811-d3809ca33787</id>
+    </Compile>
+    <Compile Include="ThemXaPhuong.cs">
+      <BoundTo>4f4dd5b7-1bc1-4848-b72b-0f3b8c3e11e6</BoundTo>
+      <DependentUpon>ThemXaPhuong.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d52664eb-2a55-4be6-8ce0-2d11f1f1e18c</id>
+    </Compile>
+    <Compile Include="ThemXaPhuong.UserCode.cs">
+      <BoundTo>4f4dd5b7-1bc1-4848-b72b-0f3b8c3e11e6</BoundTo>
+      <DependentUpon>ThemXaPhuong.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>302f5b71-c11c-4544-9d3f-9c14dfcfa3d7</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>70aec1cf-e5c6-45a6-bbd7-87cd8eb85aec</id>
+    </None>
+    <None Include="QLTQRepository.rximg">
+      <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
+      <DependentUpon>QLTQRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e4d5683e-6fcf-4582-8811-d2d5ddfd4977</id>
+    </None>
+    <None Include="QLTQRepository.rxrep">
+      <id>5ba839ef-0ee6-480e-9fdb-97925d1694e5</id>
+      <repoid>fdc6d510-55ec-4d47-b6e8-7a99d85f3a45</repoid>
+      <reporootid>42b9c0b9-78af-49f7-b3f1-82e36bc68e43</reporootid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
+      <id>868bf039-1560-48a3-b006-5ade2ef05249</id>
+      <recordtableid>ae4475ec-f51a-447b-bed3-0df866c22a9b</recordtableid>
+    </None>
+    <None Include="ThemXaPhuong.rxrec">
+      <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
+      <id>4f4dd5b7-1bc1-4848-b72b-0f3b8c3e11e6</id>
+      <recordtableid>df511d73-e74e-4175-a901-78727e74c841</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLTQ.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>865e83dc-de73-44f4-a271-cf2c0ddb6437</id>
+    </Content>
+    <Content Include="QLTQ.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>cba4097b-aa7f-4169-b9dd-15ea5e147950</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

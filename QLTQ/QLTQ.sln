@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 6.2
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B40A2E0-AF46-4CC6-A8BE-51101A80427F}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLTQ", "QLTQ\QLTQ.csproj", "{9F6D5D94-01E8-4FD5-9675-7CFA40C51FC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F6D5D94-01E8-4FD5-9675-7CFA40C51FC2}.Debug|x86.Build.0 = Debug|x86
+		{9F6D5D94-01E8-4FD5-9675-7CFA40C51FC2}.Debug|x86.ActiveCfg = Debug|x86
+		{9F6D5D94-01E8-4FD5-9675-7CFA40C51FC2}.Release|x86.Build.0 = Release|x86
+		{9F6D5D94-01E8-4FD5-9675-7CFA40C51FC2}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

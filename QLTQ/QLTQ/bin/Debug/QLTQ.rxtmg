@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="QLTQ"
+      id="3c4ea335-7fac-4c14-acae-343560badf49"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="QLTQ"
+      id="3c4ea335-7fac-4c14-acae-343560badf49"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
