@@ -20,10 +20,15 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
+using System.Data;
+using System.Linq;
+using QLTQ_Chung;
+
 namespace QLTQ
 {
     public partial class ThemXaPhuong
     {
+    	DataConnectDataContext context;
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -33,10 +38,26 @@ namespace QLTQ
             // Your recording specific initialization code goes here.
         }
 
-        public void ValidateXaPhuong()
+        public void ValidateXaPhuong(string maXa)
         {
+        	context = new DataConnectDataContext();
+        	var DB_DMXa = (from yy in context.DanhMucXas where yy.Maxa.Equals(maXa)
+        	               select yy).FirstOrDefault();
+        	Validate.IsTrue(DB_DMXa!=null, "Them moi Danh muc Xa Phuong");
+        	
             // TODO: Replace the following line with your code implementation.
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
+            
+        }
+
+        public void XoaXaPhuong(string maXa)
+        {
+        	context = new DataConnectDataContext();
+        	var DB_DMXa = (from yy in context.DanhMucXas where yy.Maxa.Equals(maXa)
+        	               select yy).FirstOrDefault();
+        	Validate.IsTrue(DB_DMXa==null, "Them moi Danh muc Xa Phuong");
+            // TODO: Replace the following line with your code implementation.
+           // throw new NotImplementedException();
         }
 
     }

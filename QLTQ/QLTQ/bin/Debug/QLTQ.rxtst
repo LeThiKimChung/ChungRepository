@@ -15,6 +15,16 @@ rxversion="6.2">
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
 			TracingScreenshotQuality="40"/>
+			<testmodule
+			name="TatChuongTrinh"
+			id="19ade9a9-4437-4766-b8ce-4f9818d5b0b3"
+			ref="cfd8b5cf-965d-412b-9a39-df868a8413d2"
+			type="Recording"/>
+			<testmodule
+			name="ThemXaPhuong"
+			id="3f24f668-ecb2-4ae9-8b0c-170e84714180"
+			ref="df511d73-e74e-4175-a901-78727e74c841"
+			type="Recording"/>
 			<testcase
 			name="TestCase"
 			id="556daefa-9dd0-4a69-ae03-d1f95c062888"/>
@@ -22,11 +32,6 @@ rxversion="6.2">
 			name="QLTQ"
 			id="b6c7d93b-6507-4e2b-9655-68f3d5b17241"
 			reportlevel="Info;20"/>
-			<testmodule
-			name="Recording1"
-			id="f53fcd37-b2a8-408f-928a-0df2c02d5135"
-			ref="ae4475ec-f51a-447b-bed3-0df866c22a9b"
-			type="Recording"/>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -39,8 +44,11 @@ rxversion="6.2">
 					name="TestCase"
 					id="556daefa-9dd0-4a69-ae03-d1f95c062888">
 						<testmodule
-						name="Recording1"
-						id="f53fcd37-b2a8-408f-928a-0df2c02d5135"/>
+						name="ThemXaPhuong"
+						id="3f24f668-ecb2-4ae9-8b0c-170e84714180"/>
+						<testmodule
+						name="TatChuongTrinh"
+						id="19ade9a9-4437-4766-b8ce-4f9818d5b0b3"/>
 					</testcase>
 				</testcase>
 			</testsuite>

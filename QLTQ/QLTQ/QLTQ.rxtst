@@ -16,6 +16,11 @@ rxversion="6.2">
 			TracingScreenshotMode="Foreground"
 			TracingScreenshotQuality="40"/>
 			<testmodule
+			name="TatChuongTrinh"
+			id="19ade9a9-4437-4766-b8ce-4f9818d5b0b3"
+			ref="cfd8b5cf-965d-412b-9a39-df868a8413d2"
+			type="Recording"/>
+			<testmodule
 			name="ThemXaPhuong"
 			id="3f24f668-ecb2-4ae9-8b0c-170e84714180"
 			ref="df511d73-e74e-4175-a901-78727e74c841"
@@ -41,6 +46,9 @@ rxversion="6.2">
 						<testmodule
 						name="ThemXaPhuong"
 						id="3f24f668-ecb2-4ae9-8b0c-170e84714180"/>
+						<testmodule
+						name="TatChuongTrinh"
+						id="19ade9a9-4437-4766-b8ce-4f9818d5b0b3"/>
 					</testcase>
 				</testcase>
 			</testsuite>

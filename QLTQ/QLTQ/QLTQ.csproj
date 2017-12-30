@@ -100,6 +100,18 @@
       <UserCode>true</UserCode>
       <id>26a266ce-7add-46b9-b811-d3809ca33787</id>
     </Compile>
+    <Compile Include="TatChuongTrinh.cs">
+      <BoundTo>69511993-c18a-40fd-a212-8c3c5cc72763</BoundTo>
+      <DependentUpon>TatChuongTrinh.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f06332cd-aff4-40fa-ada4-b0a90557875f</id>
+    </Compile>
+    <Compile Include="TatChuongTrinh.UserCode.cs">
+      <BoundTo>69511993-c18a-40fd-a212-8c3c5cc72763</BoundTo>
+      <DependentUpon>TatChuongTrinh.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba7fa722-e35a-4694-8753-8a95609ca03b</id>
+    </Compile>
     <Compile Include="ThemXaPhuong.cs">
       <BoundTo>4f4dd5b7-1bc1-4848-b72b-0f3b8c3e11e6</BoundTo>
       <DependentUpon>ThemXaPhuong.rxrec</DependentUpon>
@@ -132,6 +144,11 @@
       <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
       <id>868bf039-1560-48a3-b006-5ade2ef05249</id>
       <recordtableid>ae4475ec-f51a-447b-bed3-0df866c22a9b</recordtableid>
+    </None>
+    <None Include="TatChuongTrinh.rxrec">
+      <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
+      <id>69511993-c18a-40fd-a212-8c3c5cc72763</id>
+      <recordtableid>cfd8b5cf-965d-412b-9a39-df868a8413d2</recordtableid>
     </None>
     <None Include="ThemXaPhuong.rxrec">
       <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>

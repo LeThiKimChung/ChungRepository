@@ -1,15 +1,18 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="QLTQ.rxtst" />
+    <Element value="ThemXaPhuong.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="QLTQ.rxtst" />
+    <Element value="ThemXaPhuong.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <runOnBuild value="False" />
     </Properties>
-    <Array name="recentusercodeselections" />
+    <Array name="recentusercodeselections">
+      <Element value="QLTQ.ThemXaPhuong.ValidateXaPhuong()" />
+    </Array>
   </Properties>
 </Properties>

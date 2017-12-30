@@ -95,8 +95,8 @@ namespace QLTQ
             repo.Frmmain.CậpNhậtDanhMục.Click("33;11");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.ButtonDivAlignEqcenterWidthEq65XaPhư' at 52;36.", repo.Frmmain.ButtonDivAlignEqcenterWidthEq65XaPhưInfo, new RecordItemIndex(4));
-            repo.Frmmain.ButtonDivAlignEqcenterWidthEq65XaPhư.Click("52;36");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.XaPhuong' at 52;36.", repo.Frmmain.XaPhuongInfo, new RecordItemIndex(4));
+            repo.Frmmain.XaPhuong.Click("52;36");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.MaXa' at 7;5.", repo.Frmmain.MaXaInfo, new RecordItemIndex(5));

@@ -41,6 +41,7 @@ namespace QLTQ
         /// </summary>
         public ThemXaPhuong()
         {
+            MaXa = "";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace QLTQ
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable MaXa.
+        /// </summary>
+        [TestVariable("bb277ca1-b862-4c05-9e1d-ce97cd3a72bf")]
+        public string MaXa
+        {
+            get { return repo.MaXa; }
+            set { repo.MaXa = value; }
+        }
 
 #endregion
 
@@ -73,58 +84,81 @@ namespace QLTQ
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.2")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files (x86)\\Microsoft\\Setup\\Quanlytuyenquan.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication("C:\\Program Files (x86)\\Microsoft\\Setup\\Quanlytuyenquan.exe", "", "C:\\Program Files (x86)\\Microsoft\\Setup", false);
-            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'bodoi{Tab}123456'.", new RecordItemIndex(1));
-            Keyboard.Press("bodoi{Tab}123456");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmLogin1.TenDangNhap' at 12;10.", repo.FrmLogin1.TenDangNhapInfo, new RecordItemIndex(1));
+            repo.FrmLogin1.TenDangNhap.Click("12;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmLogin.ĐăngNhập' at 81;11.", repo.FrmLogin.ĐăngNhậpInfo, new RecordItemIndex(2));
-            repo.FrmLogin.ĐăngNhập.Click("81;11");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'bodoi{Tab}' with focus on 'FrmLogin1.TenDangNhap'.", repo.FrmLogin1.TenDangNhapInfo, new RecordItemIndex(2));
+            repo.FrmLogin1.TenDangNhap.PressKeys("bodoi{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.CậpNhậtDanhMục' at 33;11.", repo.Frmmain.CậpNhậtDanhMụcInfo, new RecordItemIndex(3));
-            repo.Frmmain.CậpNhậtDanhMục.Click("33;11");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '123456' with focus on 'FrmLogin1.MatKhau'.", repo.FrmLogin1.MatKhauInfo, new RecordItemIndex(3));
+            repo.FrmLogin1.MatKhau.PressKeys("123456");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.ButtonDivAlignEqcenterWidthEq65XaPhư' at 52;36.", repo.Frmmain.ButtonDivAlignEqcenterWidthEq65XaPhưInfo, new RecordItemIndex(4));
-            repo.Frmmain.ButtonDivAlignEqcenterWidthEq65XaPhư.Click("52;36");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmLogin1.ĐăngNhập' at 43;6.", repo.FrmLogin1.ĐăngNhậpInfo, new RecordItemIndex(4));
+            repo.FrmLogin1.ĐăngNhập.Click("43;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.MaXa' at 7;5.", repo.Frmmain.MaXaInfo, new RecordItemIndex(5));
+            // Them Xa Phuong
+            Report.Log(ReportLevel.Info, "Section", "Them Xa Phuong", new RecordItemIndex(5));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.CậpNhậtDanhMục' at 39;7.", repo.Frmmain.CậpNhậtDanhMụcInfo, new RecordItemIndex(6));
+            repo.Frmmain.CậpNhậtDanhMục.Click("39;7");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.XaPhuong' at 52;36.", repo.Frmmain.XaPhuongInfo, new RecordItemIndex(7));
+            repo.Frmmain.XaPhuong.Click("52;36");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.MaXa' at 7;5.", repo.Frmmain.MaXaInfo, new RecordItemIndex(8));
             repo.Frmmain.MaXa.Click("7;5");
-            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QP' with focus on 'Frmmain.MaXa'.", repo.Frmmain.MaXaInfo, new RecordItemIndex(6));
-            repo.Frmmain.MaXa.PressKeys("QP");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QKK{Tab}' with focus on 'Frmmain.MaXa'.", repo.Frmmain.MaXaInfo, new RecordItemIndex(9));
+            repo.Frmmain.MaXa.PressKeys("QKK{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QuePhu'.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'Frmmain.MaXa' and assigning its value to variable 'MaXa'.", repo.Frmmain.MaXaInfo, new RecordItemIndex(10));
+            MaXa = repo.Frmmain.MaXa.Element.GetAttributeValueText("Text");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QuePhu'.", new RecordItemIndex(11));
             Keyboard.Press("QuePhu");
-            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.Them' at 86;8.", repo.Frmmain.ThemInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.Them' at 86;8.", repo.Frmmain.ThemInfo, new RecordItemIndex(12));
             repo.Frmmain.Them.Click("86;8");
-            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn đã thêm thông tin thành công!') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn đã thêm thông tin thành công!') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(13));
             Validate.Attribute(repo.ThongBao.MegInfo, "Text", "Bạn đã thêm thông tin thành công!");
-            Delay.Milliseconds(100);
             
-            ValidateXaPhuong();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 57;2.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 57;2.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(14));
             repo.ThongBao.ButtonOK.Click("57;2");
-            Delay.Milliseconds(200);
+            
+            ValidateXaPhuong(MaXa);
+            
+            // Xoa Xa Phuong
+            Report.Log(ReportLevel.Info, "Section", "Xoa Xa Phuong", new RecordItemIndex(16));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.PnChua.MaXaPhuong' at 68;12.", repo.Frmmain.PnChua.MaXaPhuongInfo, new RecordItemIndex(17));
+            repo.Frmmain.PnChua.MaXaPhuong.Click("68;12");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.PnChua.ButtonXoa' at 60;6.", repo.Frmmain.PnChua.ButtonXoaInfo, new RecordItemIndex(18));
+            repo.Frmmain.PnChua.ButtonXoa.Click("60;6");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn muốn xóa xã/phường này?') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(19));
+            Validate.Attribute(repo.ThongBao.MegInfo, "Text", "Bạn muốn xóa xã/phường này?");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 32;10.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(20));
+            repo.ThongBao.ButtonOK.Click("32;10");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn đã xóa thông tin thành công!') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(21));
+            Validate.Attribute(repo.ThongBao.MegInfo, "Text", "Bạn đã xóa thông tin thành công!");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 39;15.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(22));
+            repo.ThongBao.ButtonOK.Click("39;15");
+            
+            XoaXaPhuong(MaXa);
             
         }
 

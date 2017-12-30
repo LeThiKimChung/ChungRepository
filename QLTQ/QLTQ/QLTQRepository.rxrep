@@ -31,6 +31,16 @@ rxversion="6.2">
 			refimgid="af63adcf-9a6a-4239-aec2-f2dbba6a8a34">
 				/form[@title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']//element[@controlname='btdangnhap']/button[@accessiblename='&#272;&#259;ng nh&#7853;p']
 			</item>
+			<item
+			name="Thoat"
+			id="e8539a00-fa76-456d-8966-628cac4c7852"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='FrmLogin']/container/container/element[@controlname='btthoat']/button[@accessiblename='Thoát']"
+			addcaps="button,accessible"
+			refimgid="c1e21553-a4e5-4c4f-8372-4b71b86e7ddf">
+				/form[@title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']//element[@controlname='btthoat']/button[@accessiblename='Tho&#225;t']
+			</item>
 			<basepath>
 				/form[@title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']
 			</basepath>
@@ -68,7 +78,7 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				/form[@controlname='frmmain']/container[@controlname='ribbonControl1']/container[@controlname='&#3373;']//button[@accessiblename='C&#7853;p nh&#7853;t danh m&#7909;c']
 			</item>
 			<item
-			name="ButtonDivAlignEqcenterWidthEq65XaPhư"
+			name="XaPhuong"
 			id="81e84ef9-7049-4b91-9a00-91a9e1de04a0"
 			searchtimeout="30000ms"
 			capname="button"
@@ -96,6 +106,48 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			addcaps="button,accessible"
 			refimgid="ffdbe6c5-e795-4f21-9a64-88c477f0f811">
 				/form[@controlname='frmmain']/container[@controlname='pnChua']//container[@controlname='pntren']/container[@controlname='groupPanel6']/?/?/button[@accessiblename='Th&#234;m']
+			</item>
+			<folder
+			name="PnChua"
+			id="e76b34c5-02cd-461a-9db5-c347c4cb1678"
+			searchtimeout="30000ms"
+			capname="container"
+			refpath="/form[@controlname='frmmain']/container[@controlname='pnChua']"
+			addcaps="container,control,nativewindow"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="MaXaPhuong"
+				id="4fdc3a4a-4099-44eb-a67d-9d87086ce76c"
+				searchtimeout="30000ms"
+				capname="cell"
+				addcaps="cell,accessible"
+				refimgid="edfeb51c-dc26-44a9-a514-6f11b439736c">
+					/form[@controlname='frmmain']/container[@controlname='pnChua']//container[@controlname='groupPanel4']/table[@controlname='dv_xaphuong']/row/cell[@accessiblevalue=$MaXa]
+				</item>
+				<item
+				name="ButtonXoa"
+				id="e06dfe79-a6f1-4e57-9173-dd68cad1c6e5"
+				searchtimeout="30000ms"
+				capname="button"
+				refpath="/form[@controlname='frmmain']/container[@controlname='pnChua']/element/container/container/container[@controlname='pntren']/container[@controlname='groupPanel6']/element[@controlname='btn_xoa']/button[@accessiblename='Xóa']"
+				addcaps="button,accessible"
+				refimgid="c2ca3759-2d4d-4311-9fee-327b0d4ef9a2">
+					/form[@controlname='frmmain']/container[@controlname='pnChua']//container[@controlname='pntren']/container[@controlname='groupPanel6']/?/?/button[@accessiblename='X&#243;a']
+				</item>
+				<basepath>
+					/form[@controlname='frmmain']/container[@controlname='pnChua']
+				</basepath>
+			</folder>
+			<item
+			name="None"
+			id="60661c8c-343c-411e-94c2-6c368003bed9"
+			searchtimeout="30000ms"
+			capname="unknown"
+			refpath="/form[@controlname='frmmain']/container[@controlname='ribbonControl1']/container[@controlname='ഭ']/element/container[1]/element[@accessiblename='']"
+			addcaps="unknown,accessible"
+			refimgid="d76a0df2-8eea-41c1-a069-d01317d89d9c">
+				/form[@controlname='frmmain']/container[@controlname='ribbonControl1']/container[@controlname='&#3373;']//element[@accessiblename='']
 			</item>
 			<basepath>
 				/form[@controlname='frmmain']
@@ -162,7 +214,68 @@ yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
 QmCC
 			</icon>
 		</appfolder>
+		<appfolder
+		name="FrmLogin1"
+		id="84cb7adc-8321-451c-9c0d-e8b1832eaf1a"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@controlname='FrmLogin']"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ĐăngNhập"
+			id="ffe4e693-6091-46a7-aee1-4d30f9c4e4d3"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='FrmLogin']/container/container/element[@controlname='btdangnhap']/button[@accessiblename='Đăng nhập']"
+			addcaps="button,accessible"
+			refimgid="f64a9057-7071-4040-a04a-0316de25b850">
+				/form[@controlname='FrmLogin']//element[@controlname='btdangnhap']/button[@accessiblename='&#272;&#259;ng nh&#7853;p']
+			</item>
+			<item
+			name="TenDangNhap"
+			id="3bca6bfd-7826-4e96-aba9-012c025acaca"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='FrmLogin']/container/container/text[@controlname='txttendangnhap']/text[@accessiblerole='Text']"
+			addcaps="text,accessible"
+			refimgid="7b37002b-e414-47f2-a1be-3f3ca8ad8415">
+				/form[@controlname='FrmLogin']//text[@controlname='txttendangnhap']/text[@accessiblerole='Text']
+			</item>
+			<item
+			name="MatKhau"
+			id="909c5ead-3351-4fba-becb-2edf5941dada"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='FrmLogin']/container/container/text[@controlname='txtmatkhau']/text[@accessiblerole='Text']"
+			addcaps="text,accessible"
+			refimgid="4f026095-60af-4af5-a8d7-5a359ef668df">
+				/form[@controlname='FrmLogin']//text[@controlname='txtmatkhau']/text[@accessiblerole='Text']
+			</item>
+			<basepath>
+				/form[@controlname='FrmLogin']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath/>
 	</rootfolder>
-	<variables/>
+	<variables>
+		<var
+		name="MaXa"
+		id="16fb601e-8ad1-4090-8211-3801f3bc1f84">
+		</var>
+	</variables>
 </repository>

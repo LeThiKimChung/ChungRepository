@@ -30,6 +30,7 @@ namespace QLTQ
         QLTQRepositoryFolders.FrmLoginAppFolder _frmlogin;
         QLTQRepositoryFolders.FrmmainAppFolder _frmmain;
         QLTQRepositoryFolders.ThongBaoAppFolder _thongbao;
+        QLTQRepositoryFolders.FrmLogin1AppFolder _frmlogin1;
 
         /// <summary>
         /// Gets the singleton class instance representing the QLTQRepository element repository.
@@ -49,9 +50,22 @@ namespace QLTQ
             _frmlogin = new QLTQRepositoryFolders.FrmLoginAppFolder(this);
             _frmmain = new QLTQRepositoryFolders.FrmmainAppFolder(this);
             _thongbao = new QLTQRepositoryFolders.ThongBaoAppFolder(this);
+            _frmlogin1 = new QLTQRepositoryFolders.FrmLogin1AppFolder(this);
         }
 
 #region Variables
+
+        string _MaXa = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable MaXa.
+        /// </summary>
+        [TestVariable("16fb601e-8ad1-4090-8211-3801f3bc1f84")]
+        public string MaXa
+        {
+            get { return _MaXa; }
+            set { _MaXa = value; }
+        }
 
 #endregion
 
@@ -93,6 +107,15 @@ namespace QLTQ
         {
             get { return _thongbao; }
         }
+
+        /// <summary>
+        /// The FrmLogin1 folder.
+        /// </summary>
+        [RepositoryFolder("84cb7adc-8321-451c-9c0d-e8b1832eaf1a")]
+        public virtual QLTQRepositoryFolders.FrmLogin1AppFolder FrmLogin1
+        {
+            get { return _frmlogin1; }
+        }
     }
 
     /// <summary>
@@ -108,6 +131,7 @@ namespace QLTQ
         public partial class FrmLoginAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _đăngnhậpInfo;
+            RepoItemInfo _thoatInfo;
 
             /// <summary>
             /// Creates a new FrmLogin  folder.
@@ -116,6 +140,7 @@ namespace QLTQ
                     base("FrmLogin", "/form[@title='FrmLogin' and @processname='Quanlytuyenquan' and @controltypename='FrmLogin' and @instance='1']", parentFolder, 30000, null, true, "b9dbb0db-b244-41ec-9775-69003adf8f38", "")
             {
                 _đăngnhậpInfo = new RepoItemInfo(this, "ĐăngNhập", ".//element[@controlname='btdangnhap']/button[@accessiblename='Đăng nhập']", 30000, null, "3f3cb6ff-e82c-4b5a-9f6d-d66e42bc5e77");
+                _thoatInfo = new RepoItemInfo(this, "Thoat", ".//element[@controlname='btthoat']/button[@accessiblename='Thoát']", 30000, null, "e8539a00-fa76-456d-8966-628cac4c7852");
             }
 
             /// <summary>
@@ -165,6 +190,30 @@ namespace QLTQ
                     return _đăngnhậpInfo;
                 }
             }
+
+            /// <summary>
+            /// The Thoat item.
+            /// </summary>
+            [RepositoryItem("e8539a00-fa76-456d-8966-628cac4c7852")]
+            public virtual Ranorex.Button Thoat
+            {
+                get
+                {
+                    return _thoatInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Thoat item info.
+            /// </summary>
+            [RepositoryItemInfo("e8539a00-fa76-456d-8966-628cac4c7852")]
+            public virtual RepoItemInfo ThoatInfo
+            {
+                get
+                {
+                    return _thoatInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -173,10 +222,12 @@ namespace QLTQ
         [RepositoryFolder("80800de4-78f2-45e1-a8f0-f16ce07f3c6f")]
         public partial class FrmmainAppFolder : RepoGenBaseFolder
         {
+            QLTQRepositoryFolders.PnChuaFolder _pnchua;
             RepoItemInfo _cậpnhậtdanhmụcInfo;
-            RepoItemInfo _buttondivaligneqcenterwidtheq65xaphưInfo;
+            RepoItemInfo _xaphuongInfo;
             RepoItemInfo _maxaInfo;
             RepoItemInfo _themInfo;
+            RepoItemInfo _noneInfo;
 
             /// <summary>
             /// Creates a new Frmmain  folder.
@@ -184,10 +235,12 @@ namespace QLTQ
             public FrmmainAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Frmmain", "/form[@controlname='frmmain']", parentFolder, 30000, null, true, "80800de4-78f2-45e1-a8f0-f16ce07f3c6f", "")
             {
+                _pnchua = new QLTQRepositoryFolders.PnChuaFolder(this);
                 _cậpnhậtdanhmụcInfo = new RepoItemInfo(this, "CậpNhậtDanhMục", "container[@controlname='ribbonControl1']/container[@controlname='ഭ']//button[@accessiblename='Cập nhật danh mục']", 30000, null, "d136a0bc-53c8-4aa1-9f67-133146a4a929");
-                _buttondivaligneqcenterwidtheq65xaphưInfo = new RepoItemInfo(this, "ButtonDivAlignEqcenterWidthEq65XaPhư", "container[@controlname='ribbonControl1']/?/?/container[@controlname='ribbonBar2']/element/button[1]", 30000, null, "81e84ef9-7049-4b91-9a00-91a9e1de04a0");
+                _xaphuongInfo = new RepoItemInfo(this, "XaPhuong", "container[@controlname='ribbonControl1']/?/?/container[@controlname='ribbonBar2']/element/button[1]", 30000, null, "81e84ef9-7049-4b91-9a00-91a9e1de04a0");
                 _maxaInfo = new RepoItemInfo(this, "MaXa", "container[@controlname='pnChua']//container[@controlname='pntren']/container[@controlname='groupPanel5']/text[@controlname='txt_maxaphuong']/text[@accessiblerole='Text']", 30000, null, "6b6c8066-7d48-43c3-9f65-fb2bc7a739dc");
                 _themInfo = new RepoItemInfo(this, "Them", "container[@controlname='pnChua']//container[@controlname='pntren']/container[@controlname='groupPanel6']/?/?/button[@accessiblename='Thêm']", 30000, null, "e51dca11-6e5b-4992-ba53-0e59e582df6d");
+                _noneInfo = new RepoItemInfo(this, "None", "container[@controlname='ribbonControl1']/container[@controlname='ഭ']//element[@accessiblename='']", 30000, null, "60661c8c-343c-411e-94c2-6c368003bed9");
             }
 
             /// <summary>
@@ -239,26 +292,26 @@ namespace QLTQ
             }
 
             /// <summary>
-            /// The ButtonDivAlignEqcenterWidthEq65XaPhư item.
+            /// The XaPhuong item.
             /// </summary>
             [RepositoryItem("81e84ef9-7049-4b91-9a00-91a9e1de04a0")]
-            public virtual Ranorex.Button ButtonDivAlignEqcenterWidthEq65XaPhư
+            public virtual Ranorex.Button XaPhuong
             {
                 get
                 {
-                    return _buttondivaligneqcenterwidtheq65xaphưInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _xaphuongInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The ButtonDivAlignEqcenterWidthEq65XaPhư item info.
+            /// The XaPhuong item info.
             /// </summary>
             [RepositoryItemInfo("81e84ef9-7049-4b91-9a00-91a9e1de04a0")]
-            public virtual RepoItemInfo ButtonDivAlignEqcenterWidthEq65XaPhưInfo
+            public virtual RepoItemInfo XaPhuongInfo
             {
                 get
                 {
-                    return _buttondivaligneqcenterwidtheq65xaphưInfo;
+                    return _xaphuongInfo;
                 }
             }
 
@@ -307,6 +360,131 @@ namespace QLTQ
                 get
                 {
                     return _themInfo;
+                }
+            }
+
+            /// <summary>
+            /// The None item.
+            /// </summary>
+            [RepositoryItem("60661c8c-343c-411e-94c2-6c368003bed9")]
+            public virtual Ranorex.Unknown None
+            {
+                get
+                {
+                    return _noneInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The None item info.
+            /// </summary>
+            [RepositoryItemInfo("60661c8c-343c-411e-94c2-6c368003bed9")]
+            public virtual RepoItemInfo NoneInfo
+            {
+                get
+                {
+                    return _noneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PnChua folder.
+            /// </summary>
+            [RepositoryFolder("e76b34c5-02cd-461a-9db5-c347c4cb1678")]
+            public virtual QLTQRepositoryFolders.PnChuaFolder PnChua
+            {
+                get { return _pnchua; }
+            }
+        }
+
+        /// <summary>
+        /// The PnChuaFolder folder.
+        /// </summary>
+        [RepositoryFolder("e76b34c5-02cd-461a-9db5-c347c4cb1678")]
+        public partial class PnChuaFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _maxaphuongInfo;
+            RepoItemInfo _buttonxoaInfo;
+
+            /// <summary>
+            /// Creates a new PnChua  folder.
+            /// </summary>
+            public PnChuaFolder(RepoGenBaseFolder parentFolder) :
+                    base("PnChua", "container[@controlname='pnChua']", parentFolder, 30000, null, false, "e76b34c5-02cd-461a-9db5-c347c4cb1678", "")
+            {
+                _maxaphuongInfo = new RepoItemInfo(this, "MaXaPhuong", ".//container[@controlname='groupPanel4']/table[@controlname='dv_xaphuong']/row/cell[@accessiblevalue=$MaXa]", 30000, null, "4fdc3a4a-4099-44eb-a67d-9d87086ce76c");
+                _buttonxoaInfo = new RepoItemInfo(this, "ButtonXoa", ".//container[@controlname='pntren']/container[@controlname='groupPanel6']/?/?/button[@accessiblename='Xóa']", 30000, null, "e06dfe79-a6f1-4e57-9173-dd68cad1c6e5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e76b34c5-02cd-461a-9db5-c347c4cb1678")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e76b34c5-02cd-461a-9db5-c347c4cb1678")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MaXaPhuong item.
+            /// </summary>
+            [RepositoryItem("4fdc3a4a-4099-44eb-a67d-9d87086ce76c")]
+            public virtual Ranorex.Cell MaXaPhuong
+            {
+                get
+                {
+                    return _maxaphuongInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MaXaPhuong item info.
+            /// </summary>
+            [RepositoryItemInfo("4fdc3a4a-4099-44eb-a67d-9d87086ce76c")]
+            public virtual RepoItemInfo MaXaPhuongInfo
+            {
+                get
+                {
+                    return _maxaphuongInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonXoa item.
+            /// </summary>
+            [RepositoryItem("e06dfe79-a6f1-4e57-9173-dd68cad1c6e5")]
+            public virtual Ranorex.Button ButtonXoa
+            {
+                get
+                {
+                    return _buttonxoaInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonXoa item info.
+            /// </summary>
+            [RepositoryItemInfo("e06dfe79-a6f1-4e57-9173-dd68cad1c6e5")]
+            public virtual RepoItemInfo ButtonXoaInfo
+            {
+                get
+                {
+                    return _buttonxoaInfo;
                 }
             }
         }
@@ -399,6 +577,124 @@ namespace QLTQ
                 get
                 {
                     return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FrmLogin1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("84cb7adc-8321-451c-9c0d-e8b1832eaf1a")]
+        public partial class FrmLogin1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _đăngnhậpInfo;
+            RepoItemInfo _tendangnhapInfo;
+            RepoItemInfo _matkhauInfo;
+
+            /// <summary>
+            /// Creates a new FrmLogin1  folder.
+            /// </summary>
+            public FrmLogin1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmLogin1", "/form[@controlname='FrmLogin']", parentFolder, 30000, null, true, "84cb7adc-8321-451c-9c0d-e8b1832eaf1a", "")
+            {
+                _đăngnhậpInfo = new RepoItemInfo(this, "ĐăngNhập", ".//element[@controlname='btdangnhap']/button[@accessiblename='Đăng nhập']", 30000, null, "ffe4e693-6091-46a7-aee1-4d30f9c4e4d3");
+                _tendangnhapInfo = new RepoItemInfo(this, "TenDangNhap", ".//text[@controlname='txttendangnhap']/text[@accessiblerole='Text']", 30000, null, "3bca6bfd-7826-4e96-aba9-012c025acaca");
+                _matkhauInfo = new RepoItemInfo(this, "MatKhau", ".//text[@controlname='txtmatkhau']/text[@accessiblerole='Text']", 30000, null, "909c5ead-3351-4fba-becb-2edf5941dada");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("84cb7adc-8321-451c-9c0d-e8b1832eaf1a")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("84cb7adc-8321-451c-9c0d-e8b1832eaf1a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ĐăngNhập item.
+            /// </summary>
+            [RepositoryItem("ffe4e693-6091-46a7-aee1-4d30f9c4e4d3")]
+            public virtual Ranorex.Button ĐăngNhập
+            {
+                get
+                {
+                    return _đăngnhậpInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ĐăngNhập item info.
+            /// </summary>
+            [RepositoryItemInfo("ffe4e693-6091-46a7-aee1-4d30f9c4e4d3")]
+            public virtual RepoItemInfo ĐăngNhậpInfo
+            {
+                get
+                {
+                    return _đăngnhậpInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TenDangNhap item.
+            /// </summary>
+            [RepositoryItem("3bca6bfd-7826-4e96-aba9-012c025acaca")]
+            public virtual Ranorex.Text TenDangNhap
+            {
+                get
+                {
+                    return _tendangnhapInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TenDangNhap item info.
+            /// </summary>
+            [RepositoryItemInfo("3bca6bfd-7826-4e96-aba9-012c025acaca")]
+            public virtual RepoItemInfo TenDangNhapInfo
+            {
+                get
+                {
+                    return _tendangnhapInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MatKhau item.
+            /// </summary>
+            [RepositoryItem("909c5ead-3351-4fba-becb-2edf5941dada")]
+            public virtual Ranorex.Text MatKhau
+            {
+                get
+                {
+                    return _matkhauInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MatKhau item info.
+            /// </summary>
+            [RepositoryItemInfo("909c5ead-3351-4fba-becb-2edf5941dada")]
+            public virtual RepoItemInfo MatKhauInfo
+            {
+                get
+                {
+                    return _matkhauInfo;
                 }
             }
         }
