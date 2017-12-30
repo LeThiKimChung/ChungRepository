@@ -33,5 +33,11 @@ namespace QLTQ
             // Your recording specific initialization code goes here.
         }
 
+        public void ValidateXaPhuong()
+        {
+            // TODO: Replace the following line with your code implementation.
+            throw new NotImplementedException();
+        }
+
     }
 }

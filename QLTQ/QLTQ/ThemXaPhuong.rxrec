@@ -1425,6 +1425,19 @@ RRTYBRRRSAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				B&#7841;n &#273;&#227; th&#234;m th&#244;ng tin th&#224;nh c&#244;ng!
 			</matchvalue>
 		</validationitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="QLTQ"
+		classname="ThemXaPhuong"
+		methodname="ValidateXaPhuong"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="3c3b7ea0-528d-4c33-ba71-602624b0cfcf"/>
+		</userrecorditem>
 		<mouseitem
 		enabled="True"
 		optional="False"

@@ -119,7 +119,10 @@ namespace QLTQ
             Validate.Attribute(repo.ThongBao.MegInfo, "Text", "Bạn đã thêm thông tin thành công!");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 57;2.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(10));
+            ValidateXaPhuong();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 57;2.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(11));
             repo.ThongBao.ButtonOK.Click("57;2");
             Delay.Milliseconds(200);
             
