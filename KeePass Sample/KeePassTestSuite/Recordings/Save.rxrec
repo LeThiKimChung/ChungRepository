@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+rxversion="6.0"
 id="342e8ee7-c0da-4bb8-bc84-0dddc067b9e0"
-mode="Global"
-rxversion="7.2">
+embeddedrepository="false"
+mode="Global">
 	<name>
 		Save
 	</name>
@@ -24,42 +24,38 @@ rxversion="7.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Save"
-	namespace="KeePassTestSuite.Recordings">
-	</codegen>
-	<variables>
-	</variables>
+	namespace="KeePassTestSuite.Recordings"/>
+	<variables/>
 	<recorditems>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="5d8a22fc-527d-46c5-9c17-718ccd713210"
 		action="Click"
 		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="5d8a22fc-527d-46c5-9c17-718ccd713210"
 		sx="-1044"
-		sy="291">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="291"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="0592514a-c2fa-47ea-b955-ab6faad28718"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="0592514a-c2fa-47ea-b955-ab6faad28718">
 				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="True"
-				index="4"
-				prefcap="button"
-				rect="-1055,275,23,22"
 				role="button"
-				snapElem=""
+				prefcap="button"
+				capabilities="accessible"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="True"
+				dontcache="False"
+				index="4"
+				rect="-1055,275,23,22"
+				snapElem="">
 					<attribute
 					name="pressed"
 					type="System.Boolean">
@@ -178,23 +174,20 @@ LEHJ/iOTRRQBG+n2roqGM7VTZgOwyvoeefxpxs4DKJCh3DBxuOCR0JGcE/WiigBWtIG35jHzsGbk
 		</mouseitem>
 	</recorditems>
 	<repository
-	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
-	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	rxversion="6.0"
+	relativepath="..\KeePassTestSuiteRepository.rxrep">
 		<codegen
 		classname="KeePassTestSuiteRepository"
-		namespace="KeePassTestSuite">
-		</codegen>
+		namespace="KeePassTestSuite"/>
 		<rootfolder
-		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
-		name="_rootdummy_">
-		</rootfolder>
+		name="_rootdummy_"
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">
 		Save.UserCode.cs
 	</usercodefile>
-	<references>
-	</references>
+	<references/>
 </recordtable>

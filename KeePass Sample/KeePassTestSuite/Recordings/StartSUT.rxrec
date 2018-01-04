@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+rxversion="6.0"
 id="3bf45418-e728-424a-b8a5-27a733ae62b0"
-mode="Global"
-rxversion="7.2">
+embeddedrepository="false"
+mode="Global">
 	<name>
 		StartSUT
 	</name>
@@ -24,53 +24,46 @@ rxversion="7.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="StartSUT"
-	namespace="KeePassTestSuite.Recordings">
-	</codegen>
+	namespace="KeePassTestSuite.Recordings"/>
 	<variables>
 		<var
-		id="10cd0224-7644-4ec2-be91-a18ab45bdfe2"
-		name="varApplicationPath">
+		name="varApplicationPath"
+		id="10cd0224-7644-4ec2-be91-a18ab45bdfe2">
 			..\..\KeePass\\KeePass.exe
 		</var>
 	</variables>
 	<recorditems>
 		<runapprecorditem
 		enabled="True"
-		maximized="False"
-		optional="False">
-			<comment>
-			</comment>
+		optional="False"
+		maximized="False">
+			<comment/>
 			<bindings>
 				<binding
 				target="FileName"
-				variable="varApplicationPath">
-				</binding>
+				variable="varApplicationPath"/>
 			</bindings>
 			<filename>
 				C:\Users\twalter\Downloads\KeePass\KeePass.exe
 			</filename>
-			<args>
-			</args>
+			<args/>
 		</runapprecorditem>
 	</recorditems>
 	<repository
-	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
-	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	rxversion="6.0"
+	relativepath="..\KeePassTestSuiteRepository.rxrep">
 		<codegen
 		classname="KeePassTestSuiteRepository"
-		namespace="KeePassTestSuite">
-		</codegen>
+		namespace="KeePassTestSuite"/>
 		<rootfolder
-		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
-		name="_rootdummy_">
-		</rootfolder>
+		name="_rootdummy_"
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">
 		StartSUT.UserCode.cs
 	</usercodefile>
-	<references>
-	</references>
+	<references/>
 </recordtable>

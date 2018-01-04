@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+rxversion="6.0"
 id="ded9e53d-8c7a-4608-8dbe-52e858bbad39"
-mode="Desktop"
-rxversion="7.2">
+embeddedrepository="false"
+mode="Desktop">
 	<name>
 		AddGroup
 	</name>
@@ -24,47 +24,44 @@ rxversion="7.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="AddGroup"
-	namespace="KeePassTestSuite.Recordings">
-	</codegen>
+	namespace="KeePassTestSuite.Recordings"/>
 	<variables>
 		<var
-		id="4c3f43ba-f0e0-46f9-9352-67739fe4fa3f"
-		name="varGroupName">
+		name="varGroupName"
+		id="4c3f43ba-f0e0-46f9-9352-67739fe4fa3f">
 			Ranorex
 		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="249e9a9a-129c-49f8-969e-2ed0ce67e962"
 		action="Click"
 		button="Right"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="249e9a9a-129c-49f8-969e-2ed0ce67e962"
 		sx="684"
-		sy="478">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="478"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="c17711fe-1861-4f11-8377-0ec7339ff983"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="c17711fe-1861-4f11-8377-0ec7339ff983">
 				<element
-				capabilities="accessible, accessibletreeitem"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="treeitem"
-				rect="637,469,81,18"
 				role="treeitem"
-				snapElem=""
+				prefcap="treeitem"
+				capabilities="accessible, accessibletreeitem"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="637,469,81,18"
+				snapElem="">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -229,36 +226,34 @@ aDDDB60rrOXVk8oEAjkk9ce3tUtFAH//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="fb83d89e-c055-46a7-a952-88f941cc5ed8"
 		action="Click"
 		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="fb83d89e-c055-46a7-a952-88f941cc5ed8"
 		sx="788"
-		sy="496">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="496"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="5b6127e3-ca3e-4c8c-9540-fadaf2308b49"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="5b6127e3-ca3e-4c8c-9540-fadaf2308b49">
 				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="True"
-				index="0"
-				prefcap="menuitem"
-				rect="684,480,249,22"
 				role="menuitem"
-				snapElem=""
+				prefcap="menuitem"
+				capabilities="accessible"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="True"
+				dontcache="False"
+				index="0"
+				rect="684,480,249,22"
+				snapElem="">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -610,46 +605,40 @@ E+yH/nnH+Qo2Q/8APOP8hUG40bjQB//Z
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="Ranorex"
-		duration="500ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
-		searchpropertyid="bbd3e360-cccc-4aea-8702-ec0ab981ff0e">
-			<comment>
-			</comment>
+		duration="500ms"
+		searchpropertyid="bbd3e360-cccc-4aea-8702-ec0ab981ff0e"
+		KeySequence="Ranorex"
+		presstime="100ms">
+			<comment/>
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="varGroupName">
-				</binding>
+				variable="varGroupName"/>
 			</bindings>
 		</keysequenceitem>
 		<keysequenceitem
-		KeySequence="{Return}"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
-		searchpropertyid="62905fae-deeb-46e8-878a-a5186de325dd">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		searchpropertyid="62905fae-deeb-46e8-878a-a5186de325dd"
+		KeySequence="{Return}"
+		presstime="100ms">
+			<comment/>
+			<bindings/>
 		</keysequenceitem>
 	</recorditems>
 	<repository
-	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
-	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	rxversion="6.0"
+	relativepath="..\KeePassTestSuiteRepository.rxrep">
 		<codegen
 		classname="KeePassTestSuiteRepository"
-		namespace="KeePassTestSuite">
-		</codegen>
+		namespace="KeePassTestSuite"/>
 		<rootfolder
-		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
-		name="_rootdummy_">
-		</rootfolder>
+		name="_rootdummy_"
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">

@@ -22,7 +22,7 @@ namespace KeePassTestSuite
     /// <summary>
     /// The class representing the KeePassTestSuiteRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.2")]
     [RepositoryFolder("0e2cdd23-dd72-4d10-b662-4933e627b6fb")]
     public partial class KeePassTestSuiteRepository : RepoGenBaseFolder
     {
@@ -33,7 +33,6 @@ namespace KeePassTestSuite
         KeePassTestSuiteRepositoryFolders.AddEntryAppFolder _addentry;
         KeePassTestSuiteRepositoryFolders.IconPickerAppFolder _iconpicker;
         KeePassTestSuiteRepositoryFolders.KeePass2AppFolder _keepass2;
-        KeePassTestSuiteRepositoryFolders.PhongVeHồngNgọcThịnhAppFolder _phongvehồngngọcthịnh;
 
         /// <summary>
         /// Gets the singleton class instance representing the KeePassTestSuiteRepository element repository.
@@ -56,7 +55,6 @@ namespace KeePassTestSuite
             _addentry = new KeePassTestSuiteRepositoryFolders.AddEntryAppFolder(this);
             _iconpicker = new KeePassTestSuiteRepositoryFolders.IconPickerAppFolder(this);
             _keepass2 = new KeePassTestSuiteRepositoryFolders.KeePass2AppFolder(this);
-            _phongvehồngngọcthịnh = new KeePassTestSuiteRepositoryFolders.PhongVeHồngNgọcThịnhAppFolder(this);
         }
 
 #region Variables
@@ -176,21 +174,12 @@ namespace KeePassTestSuite
         {
             get { return _keepass2; }
         }
-
-        /// <summary>
-        /// The PhongVeHồngNgọcThịnh folder.
-        /// </summary>
-        [RepositoryFolder("0c6c04b0-cee7-4d93-84fb-7ade8c9c2520")]
-        public virtual KeePassTestSuiteRepositoryFolders.PhongVeHồngNgọcThịnhAppFolder PhongVeHồngNgọcThịnh
-        {
-            get { return _phongvehồngngọcthịnh; }
-        }
     }
 
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.2")]
     public partial class KeePassTestSuiteRepositoryFolders
     {
         /// <summary>
@@ -1195,124 +1184,6 @@ namespace KeePassTestSuite
                 get
                 {
                     return _buttondeleteInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The PhongVeHồngNgọcThịnhAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("0c6c04b0-cee7-4d93-84fb-7ade8c9c2520")]
-        public partial class PhongVeHồngNgọcThịnhAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _txtfromInfo;
-            RepoItemInfo _select2chosen1Info;
-            RepoItemInfo _submitdepartureInfo;
-
-            /// <summary>
-            /// Creates a new PhongVeHồngNgọcThịnh  folder.
-            /// </summary>
-            public PhongVeHồngNgọcThịnhAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("PhongVeHồngNgọcThịnh", "/dom[10]", parentFolder, 30000, null, false, "0c6c04b0-cee7-4d93-84fb-7ade8c9c2520", "")
-            {
-                _txtfromInfo = new RepoItemInfo(this, "TxtFrom", ".//input[#'txtFrom']", 30000, null, "ade4fdee-8ef6-4a6d-a1a0-decb28acaf76");
-                _select2chosen1Info = new RepoItemInfo(this, "Select2Chosen1", ".//span[#'select2-chosen-1']", 30000, null, "d2d2148d-39fe-4995-8d14-74c9056d409b");
-                _submitdepartureInfo = new RepoItemInfo(this, "SubmitDeparture", ".//span[#'submit-departure']", 30000, null, "59f72360-ecfc-4b7e-8ec3-f27095cc0464");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("0c6c04b0-cee7-4d93-84fb-7ade8c9c2520")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("0c6c04b0-cee7-4d93-84fb-7ade8c9c2520")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TxtFrom item.
-            /// </summary>
-            [RepositoryItem("ade4fdee-8ef6-4a6d-a1a0-decb28acaf76")]
-            public virtual Ranorex.InputTag TxtFrom
-            {
-                get
-                {
-                    return _txtfromInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TxtFrom item info.
-            /// </summary>
-            [RepositoryItemInfo("ade4fdee-8ef6-4a6d-a1a0-decb28acaf76")]
-            public virtual RepoItemInfo TxtFromInfo
-            {
-                get
-                {
-                    return _txtfromInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Select2Chosen1 item.
-            /// </summary>
-            [RepositoryItem("d2d2148d-39fe-4995-8d14-74c9056d409b")]
-            public virtual Ranorex.SpanTag Select2Chosen1
-            {
-                get
-                {
-                    return _select2chosen1Info.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Select2Chosen1 item info.
-            /// </summary>
-            [RepositoryItemInfo("d2d2148d-39fe-4995-8d14-74c9056d409b")]
-            public virtual RepoItemInfo Select2Chosen1Info
-            {
-                get
-                {
-                    return _select2chosen1Info;
-                }
-            }
-
-            /// <summary>
-            /// The SubmitDeparture item.
-            /// </summary>
-            [RepositoryItem("59f72360-ecfc-4b7e-8ec3-f27095cc0464")]
-            public virtual Ranorex.SpanTag SubmitDeparture
-            {
-                get
-                {
-                    return _submitdepartureInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SubmitDeparture item info.
-            /// </summary>
-            [RepositoryItemInfo("59f72360-ecfc-4b7e-8ec3-f27095cc0464")]
-            public virtual RepoItemInfo SubmitDepartureInfo
-            {
-                get
-                {
-                    return _submitdepartureInfo;
                 }
             }
         }

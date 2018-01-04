@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+rxversion="6.0"
 id="81c30192-03a8-4968-9c9a-3f62e396872a"
-mode="Global"
-rxversion="7.2">
+embeddedrepository="false"
+mode="Global">
 	<name>
 		EmptyRecycleBin
 	</name>
@@ -24,42 +24,38 @@ rxversion="7.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="EmptyRecycleBin"
-	namespace="KeePassTestSuite.Recordings">
-	</codegen>
-	<variables>
-	</variables>
+	namespace="KeePassTestSuite.Recordings"/>
+	<variables/>
 	<recorditems>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="da1064b8-78a8-4352-832a-92891ada7ede"
 		action="Click"
 		button="Right"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="da1064b8-78a8-4352-832a-92891ada7ede"
 		sx="-1027"
-		sy="436">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="436"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="dc869fdd-d696-48c9-a208-2ddab7390268"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="dc869fdd-d696-48c9-a208-2ddab7390268">
 				<element
-				capabilities="accessible, accessibletreeitem"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="6"
-				prefcap="treeitem"
-				rect="-1067,427,62,18"
 				role="treeitem"
-				snapElem=""
+				prefcap="treeitem"
+				capabilities="accessible, accessibletreeitem"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="6"
+				rect="-1067,427,62,18"
+				snapElem="">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -224,36 +220,34 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="63a9d1c8-138f-46ee-9ff6-29d04f246d8a"
 		action="Click"
 		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="63a9d1c8-138f-46ee-9ff6-29d04f246d8a"
 		sx="-896"
-		sy="518">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="518"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="1f013560-846f-4e6a-8950-733a9eb1687b"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="1f013560-846f-4e6a-8950-733a9eb1687b">
 				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="True"
-				index="4"
-				prefcap="menuitem"
-				rect="-1027,510,249,22"
 				role="menuitem"
-				snapElem=""
+				prefcap="menuitem"
+				capabilities="accessible"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="True"
+				dontcache="False"
+				index="4"
+				rect="-1027,510,249,22"
+				snapElem="">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -594,36 +588,34 @@ oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		enabled="True"
+		optional="True"
+		duration="500ms"
+		searchpropertyid="6621a53b-48db-47b6-9986-d7c99aace1a8"
 		action="Click"
 		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="True"
-		searchpropertyid="6621a53b-48db-47b6-9986-d7c99aace1a8"
 		sx="-768"
-		sy="566">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="566"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="ea5323c6-eee8-471e-bdfd-3793afe556ed"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="ea5323c6-eee8-471e-bdfd-3793afe556ed">
 				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="True"
-				index="0"
-				prefcap="button"
-				rect="-815,555,68,23"
 				role="button"
-				snapElem=""
+				prefcap="button"
+				capabilities="nativewindow"
+				flavor="win32"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="True"
+				dontcache="False"
+				index="0"
+				rect="-815,555,68,23"
+				snapElem="">
 					<attribute
 					name="pressed"
 					type="System.Boolean">
@@ -680,61 +672,51 @@ oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 						&amp;Delete
 					</attribute>
 					<dynamicattribute
-					description="The default action of the accessible object."
 					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
 					type="System.String"
-					weight="400">
-					</dynamicattribute>
+					description="The default action of the accessible object."/>
 					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
+					name="AccessibleDescription"
+					type="System.String"
+					description="The description of the accessible object."
+					truncationlength="-1"/>
 					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
+					name="AccessibleHelp"
+					type="System.String"
+					description="The help string of the accessible object."
+					truncationlength="-1"/>
 					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
+					name="AccessibleHelpTopic"
+					type="System.String"
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."/>
+					<dynamicattribute
+					name="AccessibleKeyboardShortcut"
+					type="System.String"
+					description="The keyboard shortcut of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleName"
+					type="System.String"
+					description="The name of the accessible object."
+					weight="400"
 					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The role of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The state of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleValue"
+					type="System.String"
+					description="The value of the accessible object."
+					readonly="False"
+					truncationlength="-1"/>
 					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
+					displayName="AccessibleDoDefaultAction"
+					description="Invokes the default action of the accessible object."/>
 				</element>
 				<path>
 					/form[@title='KeePass' and @processname='KeePass']/?/?/element[@instance='0']/button[@text='&amp;Delete']
@@ -878,36 +860,34 @@ tS49V/79p/8AE0f2pceq/wDftP8A4mgDoft8v9+P/v0f/iqPt8v9+P8A79H/AOKrnv7UuPVf+/af
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="23169f26-685c-4bd1-a14e-e6d091378aa8"
 		action="Click"
 		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="23169f26-685c-4bd1-a14e-e6d091378aa8"
 		sx="-1024"
-		sy="313">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="313"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="c17711fe-1861-4f11-8377-0ec7339ff983"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="c17711fe-1861-4f11-8377-0ec7339ff983">
 				<element
-				capabilities="accessible, accessibletreeitem"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="True"
-				index="0"
-				prefcap="treeitem"
-				rect="-1086,301,81,18"
 				role="treeitem"
-				snapElem=""
+				prefcap="treeitem"
+				capabilities="accessible, accessibletreeitem"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="True"
+				dontcache="False"
+				index="0"
+				rect="-1086,301,81,18"
+				snapElem="">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -1069,23 +1049,20 @@ UAFFFFABRRRQB//Z
 		</mouseitem>
 	</recorditems>
 	<repository
-	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
-	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	rxversion="6.0"
+	relativepath="..\KeePassTestSuiteRepository.rxrep">
 		<codegen
 		classname="KeePassTestSuiteRepository"
-		namespace="KeePassTestSuite">
-		</codegen>
+		namespace="KeePassTestSuite"/>
 		<rootfolder
-		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
-		name="_rootdummy_">
-		</rootfolder>
+		name="_rootdummy_"
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">
 		EmptyRecycleBin.UserCode.cs
 	</usercodefile>
-	<references>
-	</references>
+	<references/>
 </recordtable>

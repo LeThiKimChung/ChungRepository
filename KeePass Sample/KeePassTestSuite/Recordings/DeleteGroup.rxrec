@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+rxversion="6.0"
 id="6b502c5c-26e5-46bd-813b-9a4f90f0684d"
-mode="Global"
-rxversion="7.2">
+embeddedrepository="false"
+mode="Global">
 	<name>
 		DeleteGroup
 	</name>
@@ -24,42 +24,38 @@ rxversion="7.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="DeleteGroup"
-	namespace="KeePassTestSuite.Recordings">
-	</codegen>
-	<variables>
-	</variables>
+	namespace="KeePassTestSuite.Recordings"/>
+	<variables/>
 	<recorditems>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="489b04af-5f83-4d7d-ad47-c7ea52c0dac2"
 		action="Click"
 		button="Right"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="489b04af-5f83-4d7d-ad47-c7ea52c0dac2"
 		sx="-1049"
-		sy="455">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="455"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="040065ca-fe26-471d-9be4-b21ade5331cc"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="040065ca-fe26-471d-9be4-b21ade5331cc">
 				<element
-				capabilities="accessible, accessibletreeitem"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="True"
-				index="7"
-				prefcap="treeitem"
-				rect="-1067,445,46,18"
 				role="treeitem"
-				snapElem=""
+				prefcap="treeitem"
+				capabilities="accessible, accessibletreeitem"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="True"
+				dontcache="False"
+				index="7"
+				rect="-1067,445,46,18"
+				snapElem="">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -219,36 +215,34 @@ iigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="67e178f7-f0dc-4cc6-bc14-d63ef3a9041a"
 		action="Click"
 		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
 		movetime="300ms"
-		optional="False"
-		searchpropertyid="67e178f7-f0dc-4cc6-bc14-d63ef3a9041a"
 		sx="-995"
-		sy="520">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		sy="520"
+		loc="Center">
+			<comment/>
+			<bindings/>
 			<info
-			id="9c62e972-637b-457c-b855-7ede60edd502"
-			sourcename="Recorder">
+			sourcename="Recorder"
+			id="9c62e972-637b-457c-b855-7ede60edd502">
 				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="True"
-				index="3"
-				prefcap="menuitem"
-				rect="-1049,507,249,22"
 				role="menuitem"
-				snapElem=""
+				prefcap="menuitem"
+				capabilities="accessible"
+				flavor="msaa"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="True"
+				dontcache="False"
+				index="3"
+				rect="-1049,507,249,22"
+				snapElem="">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -574,18 +568,16 @@ f//Z
 		</mouseitem>
 	</recorditems>
 	<repository
-	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
-	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	rxversion="6.0"
+	relativepath="..\KeePassTestSuiteRepository.rxrep">
 		<codegen
 		classname="KeePassTestSuiteRepository"
-		namespace="KeePassTestSuite">
-		</codegen>
+		namespace="KeePassTestSuite"/>
 		<rootfolder
-		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
-		name="_rootdummy_">
-		</rootfolder>
+		name="_rootdummy_"
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">

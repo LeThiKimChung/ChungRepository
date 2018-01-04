@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-# Ranorex Studio 7.2
+# Ranorex Studio 6.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeePassTestSuite", "KeePassTestSuite\KeePassTestSuite.csproj", "{AC2AD819-865C-4A36-9AFC-B17715DBA647}"
 EndProject
 Global

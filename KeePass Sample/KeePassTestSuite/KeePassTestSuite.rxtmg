@@ -1,90 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulegroupdoc
-rxversion="7.2">
+rxversion="6.0">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<modulegroupdef
-			id="06034367-fafa-4251-8bc4-e13a3b6c091a"
-			name="StartAndLogin">
+			name="StartAndLogin"
+			id="06034367-fafa-4251-8bc4-e13a3b6c091a">
 				<description>
 					<![CDATA[Start SUT and Login]]>
 				</description>
 				<groupvariables>
 					<groupvariable
-					defaultvalue="ModuleGroupDefaultValue"
+					name="ModuleGroupGlobalExecutionPath"
 					id="cdc59aa8-210b-41ff-ad83-86e092e42176"
-					name="ModuleGroupGlobalExecutionPath">
+					defaultvalue="ModuleGroupDefaultValue">
 						<modulevariable
-						moduleref="a6eb707a-b4cb-4d84-a2c7-f4c6e7ee79d0"
 						name="varApplicationPath"
-						variableref="10cd0224-7644-4ec2-be91-a18ab45bdfe2">
-						</modulevariable>
+						variableref="10cd0224-7644-4ec2-be91-a18ab45bdfe2"
+						moduleref="a6eb707a-b4cb-4d84-a2c7-f4c6e7ee79d0"/>
 					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
 			<testmodule
-			id="07986d1b-6fc3-4591-b5d1-93399fc126af"
 			name="CloseSUT"
+			id="07986d1b-6fc3-4591-b5d1-93399fc126af"
 			ref="c8d8da71-3572-4603-b2e2-ebe7fd656894"
-			type="Recording">
-			</testmodule>
+			type="Recording"/>
 			<modulegroups
-			id="7d9726cf-91a7-46de-9c41-b391d3e63a82"
-			name="KeePassTestSuite">
-			</modulegroups>
+			name="KeePassTestSuite"
+			id="7d9726cf-91a7-46de-9c41-b391d3e63a82"/>
 			<modulegroupdef
-			id="8a2c779f-8e28-4633-8a8b-37d39161f546"
-			name="SaveAndClose">
+			name="SaveAndClose"
+			id="8a2c779f-8e28-4633-8a8b-37d39161f546">
 				<description>
 					<![CDATA[Save SUT and Close]]>
 				</description>
 			</modulegroupdef>
 			<testmodule
-			id="a6eb707a-b4cb-4d84-a2c7-f4c6e7ee79d0"
 			name="StartSUT"
+			id="a6eb707a-b4cb-4d84-a2c7-f4c6e7ee79d0"
 			ref="3bf45418-e728-424a-b8a5-27a733ae62b0"
-			type="Recording">
-			</testmodule>
+			type="Recording"/>
 			<testmodule
-			id="acd01ecb-dc17-465e-977c-c6e92f725470"
 			name="Save"
+			id="acd01ecb-dc17-465e-977c-c6e92f725470"
 			ref="342e8ee7-c0da-4bb8-bc84-0dddc067b9e0"
-			type="Recording">
-			</testmodule>
+			type="Recording"/>
 			<testmodule
-			id="e3cd7980-1cdf-458d-a7da-5bebe1236d2e"
 			name="Login"
+			id="e3cd7980-1cdf-458d-a7da-5bebe1236d2e"
 			ref="5a944264-558e-45db-901a-21b0d3223544"
-			type="Recording">
-			</testmodule>
+			type="Recording"/>
 		</flatlistofchildren>
 		<childhierarchy>
 			<modulegroups
-			id="7d9726cf-91a7-46de-9c41-b391d3e63a82"
-			name="KeePassTestSuite">
+			name="KeePassTestSuite"
+			id="7d9726cf-91a7-46de-9c41-b391d3e63a82">
 				<modulegroupdef
-				id="06034367-fafa-4251-8bc4-e13a3b6c091a"
-				name="StartAndLogin">
+				name="StartAndLogin"
+				id="06034367-fafa-4251-8bc4-e13a3b6c091a">
 					<testmodule
-					id="a6eb707a-b4cb-4d84-a2c7-f4c6e7ee79d0"
-					name="StartSUT">
-					</testmodule>
+					name="StartSUT"
+					id="a6eb707a-b4cb-4d84-a2c7-f4c6e7ee79d0"/>
 					<testmodule
-					id="e3cd7980-1cdf-458d-a7da-5bebe1236d2e"
-					name="Login">
-					</testmodule>
+					name="Login"
+					id="e3cd7980-1cdf-458d-a7da-5bebe1236d2e"/>
 				</modulegroupdef>
 				<modulegroupdef
-				id="8a2c779f-8e28-4633-8a8b-37d39161f546"
-				name="SaveAndClose">
+				name="SaveAndClose"
+				id="8a2c779f-8e28-4633-8a8b-37d39161f546">
 					<testmodule
-					id="acd01ecb-dc17-465e-977c-c6e92f725470"
-					name="Save">
-					</testmodule>
+					name="Save"
+					id="acd01ecb-dc17-465e-977c-c6e92f725470"/>
 					<testmodule
-					id="07986d1b-6fc3-4591-b5d1-93399fc126af"
-					name="CloseSUT">
-					</testmodule>
+					name="CloseSUT"
+					id="07986d1b-6fc3-4591-b5d1-93399fc126af"/>
 				</modulegroupdef>
 			</modulegroups>
 		</childhierarchy>

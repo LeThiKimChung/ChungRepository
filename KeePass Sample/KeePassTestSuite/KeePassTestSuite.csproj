@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.props" Condition="Exists('..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.props')" />
   <PropertyGroup>
     <ProjectGuid>{AC2AD819-865C-4A36-9AFC-B17715DBA647}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,16 +7,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>KeePassTestSuite</RootNamespace>
     <AssemblyName>KeePassTestSuite</AssemblyName>
-    <RanorexVersion>7.2</RanorexVersion>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexVersion>6.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <projectdefaultrepository>30d0c825-aceb-4ad5-8c25-29554b281eeb</projectdefaultrepository>
     <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
-    <StartAction>Project</StartAction>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -40,19 +33,13 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
-    <Reference Include="Atlassian.Jira">
-      <HintPath>..\packages\Atlassian.SDK.9.2.4\lib\Atlassian.Jira.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Ranorex.Core" />
     <Reference Include="Ranorex.Plugin.Cef" />
     <Reference Include="Ranorex.Plugin.ChromeWeb" />
-    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
     <Reference Include="Ranorex.Plugin.Flex" />
     <Reference Include="Ranorex.Plugin.Java" />
     <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
     <Reference Include="Ranorex.Plugin.Msaa" />
     <Reference Include="Ranorex.Plugin.Office" />
     <Reference Include="Ranorex.Plugin.Qt" />
@@ -64,20 +51,11 @@
     <Reference Include="Ranorex.Plugin.Win32" />
     <Reference Include="Ranorex.Plugin.WinForms" />
     <Reference Include="Ranorex.Plugin.Wpf" />
-    <Reference Include="Ranorex_JiraIntegration">
-      <HintPath>..\..\..\..\Ranorex_Jira\Ranorex_JiraIntegration.dll</HintPath>
-    </Reference>
-    <Reference Include="RestSharp">
-      <HintPath>..\packages\RestSharp.105.2.3\lib\net4\RestSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TechTalk.JiraRestClient">
-      <HintPath>..\..\..\..\Ranorex_Jira\TechTalk.JiraRestClient.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
@@ -94,18 +72,6 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>0d2d440f-6bca-4ef0-b398-ee3f6f80a9bb</id>
-    </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>89b72ecb-1b3d-4e9a-871c-77c03188adbe</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>e2de846f-afd8-4c77-b40b-a5bcd9086ea8</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>89b72ecb-1b3d-4e9a-871c-77c03188adbe</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ee0acc1b-927c-4328-8ea0-acc68146fbf5</id>
     </Compile>
     <Compile Include="Recordings\AddGroup.cs">
       <BoundTo>72aff2e8-13ff-4958-b01b-76387eece9a3</BoundTo>
@@ -251,9 +217,6 @@
       <UserCode>true</UserCode>
       <DependentUpon>ValidateEntry.rxrec</DependentUpon>
     </Compile>
-    <Content Include="TextFile1.txt">
-      <id>2212c975-0405-4841-8a0f-be72c3086a4e</id>
-    </Content>
     <None Include="app.config">
       <id>fd97d4a9-55a5-47fb-a690-dfa8e8db7568</id>
     </None>
@@ -321,17 +284,6 @@
     <None Include="KeePass\XSL\TableHeader.gif">
       <id>29dd57de-61f9-4433-9e5b-2e58f9a561ad</id>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="packages.config">
-      <id>249935a8-efa6-4a55-a8c1-09e57f116b85</id>
-    </None>
-    <None Include="RanorexJiraCli.exe">
-      <id>1c51037b-3b22-46f5-88fd-3e49929caac9</id>
-    </None>
-    <None Include="Recording1.rxrec">
-      <id>89b72ecb-1b3d-4e9a-871c-77c03188adbe</id>
-      <recordtableid>fb7e5a23-536c-47d0-957d-40193a19f1c2</recordtableid>
-      <BoundTo>30d0c825-aceb-4ad5-8c25-29554b281eeb</BoundTo>
     </None>
     <None Include="Recordings\AddGroup.rxrec">
       <BoundTo>30d0c825-aceb-4ad5-8c25-29554b281eeb</BoundTo>
@@ -402,7 +354,19 @@
       <id>c6283bbf-4cee-46e5-b2fd-fb471c304eac</id>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="CodeModules">
+      <id>d37faac4-f0a5-4adf-86e8-4fbaee67b170</id>
+    </Folder>
+    <Folder Include="KeePass">
+      <id>d5072257-5a1b-4b83-8085-b3880fed6327</id>
+    </Folder>
+    <Folder Include="KeePass\XSL">
+      <id>4127b170-4eeb-4bd0-95e3-d5c43a450216</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>0bb38c0d-d0da-4719-9790-f43f32f5cb6c</id>
+    </Folder>
+  </ItemGroup>
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
-  <Import Project="..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.targets" Condition="Exists('..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.targets')" />
 </Project>

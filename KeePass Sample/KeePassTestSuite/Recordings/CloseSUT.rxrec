@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+rxversion="6.0"
 id="c8d8da71-3572-4603-b2e2-ebe7fd656894"
-mode="Global"
-rxversion="7.2">
+embeddedrepository="false"
+mode="Global">
 	<name>
 		CloseSUT
 	</name>
@@ -24,37 +24,33 @@ rxversion="7.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="CloseSUT"
-	namespace="KeePassTestSuite.Recordings">
-	</codegen>
-	<variables>
-	</variables>
+	namespace="KeePassTestSuite.Recordings"/>
+	<variables/>
 	<recorditems>
 		<closeapprecorditem
 		enabled="True"
-		graceperiod="10000ms"
-		method="CloseWindow"
 		optional="False"
-		searchpropertyid="71434ef4-3b17-4d8b-8728-86af6a20a40c">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		searchpropertyid="71434ef4-3b17-4d8b-8728-86af6a20a40c"
+		method="CloseWindow"
+		graceperiod="10000ms">
+			<comment/>
+			<bindings/>
 			<info
-			id="ad974edd-95b8-413f-81d1-04a1248ba54a"
-			sourcename="RepositoryEditor">
+			sourcename="RepositoryEditor"
+			id="ad974edd-95b8-413f-81d1-04a1248ba54a">
 				<element
-				capabilities="control, nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="winforms"
-				hasfocus="False"
-				index="13"
-				prefcap="form"
-				rect="474,32,670,481"
 				role="form"
-				snapElem=""
+				prefcap="form"
+				capabilities="control, nativewindow"
+				flavor="winforms"
+				visible="True"
 				valid="True"
-				visible="True">
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="13"
+				rect="474,32,670,481"
+				snapElem="">
 					<attribute
 					name="active"
 					type="System.Boolean">
@@ -181,346 +177,342 @@ RwAAAABJRU5ErkJggg==
 						NewDatabase.kdbx - KeePass Password Safe
 					</attribute>
 					<dynamicattribute
-					description="No description available."
 					name="AccessibleDefaultActionDescription"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="AccessibleDescription"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="AccessibleName"
-					readonly="False"
 					type="System.String"
-					weight="400">
-					</dynamicattribute>
-					<dynamicattribute
 					description="No description available."
+					readonly="False"/>
+					<dynamicattribute
+					name="AccessibleDescription"
+					type="System.String"
+					description="No description available."
+					readonly="False"/>
+					<dynamicattribute
+					name="AccessibleName"
+					type="System.String"
+					description="No description available."
+					weight="400"
+					readonly="False"/>
+					<dynamicattribute
 					name="AccessibleRole"
-					readonly="False"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Default
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AllowDrop"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AllowTransparency"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Anchor"
-					readonly="False"
-					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Top, Left
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScale"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScaleBaseSize"
-					readonly="False"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						5, 13
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScaleDimensions"
-					readonly="False"
-					type="System.Drawing.SizeF, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.SizeF, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						6, 13
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScaleMode"
-					readonly="False"
-					type="System.Windows.Forms.AutoScaleMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.AutoScaleMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Font
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScroll"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScrollMargin"
-					readonly="False"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						0, 0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScrollMinSize"
-					readonly="False"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						0, 0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScrollOffset"
-					readonly="False"
-					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						0, 0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoScrollPosition"
-					readonly="False"
-					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						0, 0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoSize"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoSizeMode"
-					readonly="False"
-					type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						GrowOnly
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="AutoValidate"
-					readonly="False"
-					type="System.Windows.Forms.AutoValidate, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.AutoValidate, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						EnablePreventFocusChange
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="BackColor"
-					readonly="False"
-					type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						Control
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="BackgroundImage"
-					readonly="False"
-					type="System.Drawing.Image, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
+					type="System.Drawing.Image, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 					description="No description available."
+					readonly="False"/>
+					<dynamicattribute
 					name="BackgroundImageLayout"
-					readonly="False"
-					type="System.Windows.Forms.ImageLayout, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.ImageLayout, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Tile
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Bottom"
-					type="System.Int32">
+					type="System.Int32"
+					description="No description available.">
 						513
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Bounds"
-					readonly="False"
-					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						474,32,670,481
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="CanFocus"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="CanSelect"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Capture"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="CausesValidation"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ClientRectangle"
-					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available.">
 						0,0,654,443
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ClientSize"
-					readonly="False"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						654, 443
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="CompanyName"
 					type="System.String"
+					description="No description available."
 					weight="200">
 						Dominik Reichl
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ContainsFocus"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ControlBox"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Created"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="CurrentAutoScaleDimensions"
-					type="System.Drawing.SizeF, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.SizeF, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available.">
 						6, 13
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Cursor"
-					readonly="False"
-					type="System.Windows.Forms.Cursor, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.Cursor, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Default
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="DesktopBounds"
-					readonly="False"
-					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						474,32,670,481
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="DesktopLocation"
-					readonly="False"
-					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						474, 32
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="DialogResult"
-					readonly="False"
-					type="System.Windows.Forms.DialogResult, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.DialogResult, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						None
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="DisplayRectangle"
-					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available.">
 						0,0,654,443
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Disposing"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Dock"
-					readonly="False"
-					type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						None
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Enabled"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Focused"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Font"
-					readonly="False"
-					type="System.Drawing.Font, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Font, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						Microsoft Sans Serif, 8.25pt
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ForeColor"
-					readonly="False"
-					type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						ControlText
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="FormBorderStyle"
-					readonly="False"
-					type="System.Windows.Forms.FormBorderStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.FormBorderStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Sizable
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="HasChildren"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Height"
-					readonly="False"
-					type="System.Int32">
+					type="System.Int32"
+					description="No description available."
+					readonly="False">
 						481
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="HelpButton"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Icon"
-					readonly="False"
-					type="System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAiKSURBVFhHrVd7VFT1FuYPdBXdm6WIZoqicu2W
 97qCrimKGhSVT1TSKxqIT0A0FM2AfIM8BsV3KRqvfJS68m2ipoPmC1OTNJ+J8RpmhqfzYIY557t7
@@ -564,310 +556,308 @@ cE7ucwdrRXBP/WLiWM1ezfrTMSolPVM6e6Vc5mnGA4U9nQ8sfG7g/lYXlMkJqkypb3/R50LtyjOe
 RwAAAABJRU5ErkJggg==
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ImeMode"
-					readonly="False"
-					type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						NoControl
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="InvokeRequired"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="IsAccessible"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="IsDisposed"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="IsHandleCreated"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="IsMdiChild"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="IsMdiContainer"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="IsMirrored"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="IsRestrictedWindow"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="KeyPreview"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Left"
-					readonly="False"
-					type="System.Int32">
+					type="System.Int32"
+					description="No description available."
+					readonly="False">
 						474
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Location"
-					readonly="False"
-					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						474, 32
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Margin"
-					readonly="False"
-					type="System.Windows.Forms.Padding, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.Padding, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						3, 3, 3, 3
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="MaximizeBox"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="MaximumSize"
-					readonly="False"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						0, 0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="MinimizeBox"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="MinimumSize"
-					readonly="False"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						0, 0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Modal"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Name"
-					readonly="False"
-					type="System.String">
+					type="System.String"
+					description="No description available."
+					readonly="False">
 						MainForm
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Opacity"
-					readonly="False"
-					type="System.Double">
+					type="System.Double"
+					description="No description available."
+					readonly="False">
 						1
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Padding"
-					readonly="False"
-					type="System.Windows.Forms.Padding, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.Padding, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						0, 0, 0, 0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="PreferredSize"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available.">
 						16, 109
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ProductName"
-					type="System.String">
+					type="System.String"
+					description="No description available.">
 						KeePass
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ProductVersion"
-					type="System.String">
+					type="System.String"
+					description="No description available.">
 						2.1.8.0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="RecreatingHandle"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available.">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="RestoreBounds"
-					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available.">
 						474,32,670,481
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Right"
-					type="System.Int32">
+					type="System.Int32"
+					description="No description available.">
 						1144
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="RightToLeft"
-					readonly="False"
-					type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						No
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="RightToLeftLayout"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ShowIcon"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="ShowInTaskbar"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Size"
-					readonly="False"
-					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+					description="No description available."
+					readonly="False">
 						670, 481
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="SizeGripStyle"
-					readonly="False"
-					type="System.Windows.Forms.SizeGripStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.SizeGripStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Auto
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="StartPosition"
-					readonly="False"
-					type="System.Windows.Forms.FormStartPosition, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.FormStartPosition, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Manual
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="TabIndex"
-					readonly="False"
-					type="System.Int32">
+					type="System.Int32"
+					description="No description available."
+					readonly="False">
 						0
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="TabStop"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Tag"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
+					type="System.Object"
 					description="No description available."
+					readonly="False"/>
+					<dynamicattribute
 					name="Text"
-					readonly="False"
-					type="System.String">
+					type="System.String"
+					description="No description available."
+					readonly="False">
 						NewDatabase.kdbx - KeePass Password Safe
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Top"
-					readonly="False"
-					type="System.Int32">
+					type="System.Int32"
+					description="No description available."
+					readonly="False">
 						32
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="TopLevel"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="TopMost"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="TransparencyKey"
-					readonly="False"
-					type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
+					type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 					description="No description available."
+					readonly="False"/>
+					<dynamicattribute
 					name="UseWaitCursor"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						False
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Visible"
-					readonly="False"
-					type="System.Boolean">
+					type="System.Boolean"
+					description="No description available."
+					readonly="False">
 						True
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="Width"
-					readonly="False"
-					type="System.Int32">
+					type="System.Int32"
+					description="No description available."
+					readonly="False">
 						670
 					</dynamicattribute>
 					<dynamicattribute
-					description="No description available."
 					name="WindowState"
-					readonly="False"
-					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="No description available."
+					readonly="False">
 						Normal
 					</dynamicattribute>
 				</element>
@@ -878,23 +868,20 @@ RwAAAABJRU5ErkJggg==
 		</closeapprecorditem>
 	</recorditems>
 	<repository
-	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
-	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	rxversion="6.0"
+	relativepath="..\KeePassTestSuiteRepository.rxrep">
 		<codegen
 		classname="KeePassTestSuiteRepository"
-		namespace="KeePassTestSuite">
-		</codegen>
+		namespace="KeePassTestSuite"/>
 		<rootfolder
-		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
-		name="_rootdummy_">
-		</rootfolder>
+		name="_rootdummy_"
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">
 		CloseSUT.UserCode.cs
 	</usercodefile>
-	<references>
-	</references>
+	<references/>
 </recordtable>

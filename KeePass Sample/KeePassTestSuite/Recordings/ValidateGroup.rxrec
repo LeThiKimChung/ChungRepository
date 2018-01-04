@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+rxversion="6.0"
 id="069e8305-2efe-4185-83c4-e100c1ad273e"
-mode="Global"
-rxversion="7.2">
+embeddedrepository="false"
+mode="Global">
 	<name>
 		ValidateGroup
 	</name>
@@ -24,32 +24,29 @@ rxversion="7.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="ValidateGroup"
-	namespace="KeePassTestSuite.Recordings">
-	</codegen>
+	namespace="KeePassTestSuite.Recordings"/>
 	<variables>
 		<var
-		id="efec13be-47b2-451f-8692-e549f975827a"
-		name="varGroupName">
+		name="varGroupName"
+		id="efec13be-47b2-451f-8692-e549f975827a">
 			Ranorex
 		</var>
 	</variables>
 	<recorditems>
 		<validationitem
-		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="1fb083ea-c653-4eef-b2f3-895875a407d1">
-			<comment>
-			</comment>
+		searchpropertyid="1fb083ea-c653-4eef-b2f3-895875a407d1"
+		action="AttributeEqual">
+			<comment/>
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="varGroupName">
-				</binding>
+				variable="varGroupName"/>
 			</bindings>
 			<info
-			id="040065ca-fe26-471d-9be4-b21ade5331cc"
-			sourcename="RepositoryEditor">
+			sourcename="RepositoryEditor"
+			id="040065ca-fe26-471d-9be4-b21ade5331cc">
 				<path>
 					/form[@controlname='MainForm']/container[@controlname='m_splitHorizontal']//tree[@controlname='m_tvGroups']/tree[@accessiblerole='Outline']/?/?/treeitem[@accessiblename=$varcategoryname]
 				</path>
@@ -62,28 +59,24 @@ rxversion="7.2">
 			</matchvalue>
 		</validationitem>
 		<explicitdelayitem
-		duration="2000ms"
 		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
+		optional="False"
+		duration="2000ms">
+			<comment/>
+			<bindings/>
 		</explicitdelayitem>
 	</recorditems>
 	<repository
-	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 	name="KeePassTestSuiteRepository"
-	relativepath="..\KeePassTestSuiteRepository.rxrep"
-	rxversion="6.0">
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	rxversion="6.0"
+	relativepath="..\KeePassTestSuiteRepository.rxrep">
 		<codegen
 		classname="KeePassTestSuiteRepository"
-		namespace="KeePassTestSuite">
-		</codegen>
+		namespace="KeePassTestSuite"/>
 		<rootfolder
-		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
-		name="_rootdummy_">
-		</rootfolder>
+		name="_rootdummy_"
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">
