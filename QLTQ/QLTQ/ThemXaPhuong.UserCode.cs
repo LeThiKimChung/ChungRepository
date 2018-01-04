@@ -43,7 +43,7 @@ namespace QLTQ
         	context = new DataConnectDataContext();
         	var DB_DMXa = (from yy in context.DanhMucXas where yy.Maxa.Equals(maXa)
         	               select yy).FirstOrDefault();
-        	Validate.IsTrue(DB_DMXa!=null, "Them moi Danh muc Xa Phuong");
+        	Validate.IsTrue(DB_DMXa!=null, "=========Them moi Danh muc Xa Phuong=========");
         	
             // TODO: Replace the following line with your code implementation.
            // throw new NotImplementedException();
@@ -55,7 +55,7 @@ namespace QLTQ
         	context = new DataConnectDataContext();
         	var DB_DMXa = (from yy in context.DanhMucXas where yy.Maxa.Equals(maXa)
         	               select yy).FirstOrDefault();
-        	Validate.IsTrue(DB_DMXa==null, "Them moi Danh muc Xa Phuong");
+        	Validate.IsTrue(DB_DMXa==null, "========Them moi Danh muc Xa Phuong==========");
             // TODO: Replace the following line with your code implementation.
            // throw new NotImplementedException();
         }

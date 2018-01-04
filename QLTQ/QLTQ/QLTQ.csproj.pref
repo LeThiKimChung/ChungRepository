@@ -6,12 +6,14 @@
   <Array name="files">
     <Element value="QLTQ.rxtst" />
     <Element value="ThemXaPhuong.rxrec" />
+    <Element value="MoChuongTrinh.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
+      <Element value="QLTQ.ThemXaPhuong.XoaXaPhuong()" />
       <Element value="QLTQ.ThemXaPhuong.ValidateXaPhuong()" />
     </Array>
   </Properties>

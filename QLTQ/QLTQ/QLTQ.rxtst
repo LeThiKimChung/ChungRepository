@@ -26,8 +26,13 @@ rxversion="6.2">
 			ref="df511d73-e74e-4175-a901-78727e74c841"
 			type="Recording"/>
 			<testcase
-			name="TestCase"
+			name="QuanLyXaPhuong"
 			id="556daefa-9dd0-4a69-ae03-d1f95c062888"/>
+			<testmodule
+			name="MoChuongTrinh"
+			id="b520a5f2-787c-4479-862b-65ee2cdfab20"
+			ref="cb1e53f4-b05b-4773-a06c-21e76810fa30"
+			type="Recording"/>
 			<testcase
 			name="QLTQ"
 			id="b6c7d93b-6507-4e2b-9655-68f3d5b17241"
@@ -41,8 +46,11 @@ rxversion="6.2">
 				name="QLTQ"
 				id="b6c7d93b-6507-4e2b-9655-68f3d5b17241">
 					<testcase
-					name="TestCase"
+					name="QuanLyXaPhuong"
 					id="556daefa-9dd0-4a69-ae03-d1f95c062888">
+						<testmodule
+						name="MoChuongTrinh"
+						id="b520a5f2-787c-4479-862b-65ee2cdfab20"/>
 						<testmodule
 						name="ThemXaPhuong"
 						id="3f24f668-ecb2-4ae9-8b0c-170e84714180"/>

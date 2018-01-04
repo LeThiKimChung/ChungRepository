@@ -90,72 +90,57 @@ namespace QLTQ
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files (x86)\\Microsoft\\Setup\\Quanlytuyenquan.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("C:\\Program Files (x86)\\Microsoft\\Setup\\Quanlytuyenquan.exe", "", "C:\\Program Files (x86)\\Microsoft\\Setup", false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmLogin1.TenDangNhap' at 12;10.", repo.FrmLogin1.TenDangNhapInfo, new RecordItemIndex(1));
-            repo.FrmLogin1.TenDangNhap.Click("12;10");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'bodoi{Tab}' with focus on 'FrmLogin1.TenDangNhap'.", repo.FrmLogin1.TenDangNhapInfo, new RecordItemIndex(2));
-            repo.FrmLogin1.TenDangNhap.PressKeys("bodoi{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '123456' with focus on 'FrmLogin1.MatKhau'.", repo.FrmLogin1.MatKhauInfo, new RecordItemIndex(3));
-            repo.FrmLogin1.MatKhau.PressKeys("123456");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmLogin1.ĐăngNhập' at 43;6.", repo.FrmLogin1.ĐăngNhậpInfo, new RecordItemIndex(4));
-            repo.FrmLogin1.ĐăngNhập.Click("43;6");
-            
             // Them Xa Phuong
-            Report.Log(ReportLevel.Info, "Section", "Them Xa Phuong", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "Them Xa Phuong", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.CậpNhậtDanhMục' at 39;7.", repo.Frmmain.CậpNhậtDanhMụcInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.CậpNhậtDanhMục' at 39;7.", repo.Frmmain.CậpNhậtDanhMụcInfo, new RecordItemIndex(1));
             repo.Frmmain.CậpNhậtDanhMục.Click("39;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.XaPhuong' at 52;36.", repo.Frmmain.XaPhuongInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.XaPhuong' at 52;36.", repo.Frmmain.XaPhuongInfo, new RecordItemIndex(2));
             repo.Frmmain.XaPhuong.Click("52;36");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.MaXa' at 7;5.", repo.Frmmain.MaXaInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.MaXa' at 7;5.", repo.Frmmain.MaXaInfo, new RecordItemIndex(3));
             repo.Frmmain.MaXa.Click("7;5");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QKK{Tab}' with focus on 'Frmmain.MaXa'.", repo.Frmmain.MaXaInfo, new RecordItemIndex(9));
-            repo.Frmmain.MaXa.PressKeys("QKK{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'HA{Tab}' with focus on 'Frmmain.MaXa'.", repo.Frmmain.MaXaInfo, new RecordItemIndex(4));
+            repo.Frmmain.MaXa.PressKeys("HA{Tab}");
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'Frmmain.MaXa' and assigning its value to variable 'MaXa'.", repo.Frmmain.MaXaInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'Frmmain.MaXa' and assigning its value to variable 'MaXa'.", repo.Frmmain.MaXaInfo, new RecordItemIndex(5));
             MaXa = repo.Frmmain.MaXa.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QuePhu'.", new RecordItemIndex(11));
-            Keyboard.Press("QuePhu");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'HoiAn'.", new RecordItemIndex(6));
+            Keyboard.Press("HoiAn");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.Them' at 86;8.", repo.Frmmain.ThemInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.Them' at 86;8.", repo.Frmmain.ThemInfo, new RecordItemIndex(7));
             repo.Frmmain.Them.Click("86;8");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn đã thêm thông tin thành công!') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn đã thêm thông tin thành công!') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(8));
             Validate.Attribute(repo.ThongBao.MegInfo, "Text", "Bạn đã thêm thông tin thành công!");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 57;2.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 57;2.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(9));
             repo.ThongBao.ButtonOK.Click("57;2");
             
             ValidateXaPhuong(MaXa);
             
             // Xoa Xa Phuong
-            Report.Log(ReportLevel.Info, "Section", "Xoa Xa Phuong", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Section", "Xoa Xa Phuong", new RecordItemIndex(11));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.PnChua.MaXaPhuong' at 68;12.", repo.Frmmain.PnChua.MaXaPhuongInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.PnChua.MaXaPhuong' at 68;12.", repo.Frmmain.PnChua.MaXaPhuongInfo, new RecordItemIndex(12));
             repo.Frmmain.PnChua.MaXaPhuong.Click("68;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.PnChua.ButtonXoa' at 60;6.", repo.Frmmain.PnChua.ButtonXoaInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Frmmain.PnChua.ButtonXoa' at 60;6.", repo.Frmmain.PnChua.ButtonXoaInfo, new RecordItemIndex(13));
             repo.Frmmain.PnChua.ButtonXoa.Click("60;6");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn muốn xóa xã/phường này?') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn muốn xóa xã/phường này?') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(14));
             Validate.Attribute(repo.ThongBao.MegInfo, "Text", "Bạn muốn xóa xã/phường này?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 32;10.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 32;10.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(15));
             repo.ThongBao.ButtonOK.Click("32;10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn đã xóa thông tin thành công!') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bạn đã xóa thông tin thành công!') on item 'ThongBao.Meg'.", repo.ThongBao.MegInfo, new RecordItemIndex(16));
             Validate.Attribute(repo.ThongBao.MegInfo, "Text", "Bạn đã xóa thông tin thành công!");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 39;15.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ThongBao.ButtonOK' at 39;15.", repo.ThongBao.ButtonOKInfo, new RecordItemIndex(17));
             repo.ThongBao.ButtonOK.Click("39;15");
             
             XoaXaPhuong(MaXa);

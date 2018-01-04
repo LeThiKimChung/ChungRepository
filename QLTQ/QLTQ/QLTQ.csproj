@@ -79,6 +79,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>07649cb4-c390-4c57-bb70-606cc18a47e8</id>
     </Compile>
+    <Compile Include="MoChuongTrinh.cs">
+      <BoundTo>64db9c5d-2f80-4a37-84ae-7549527215ab</BoundTo>
+      <DependentUpon>MoChuongTrinh.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b4a7dd17-950f-4b56-8133-c31f5150e2bb</id>
+    </Compile>
+    <Compile Include="MoChuongTrinh.UserCode.cs">
+      <BoundTo>64db9c5d-2f80-4a37-84ae-7549527215ab</BoundTo>
+      <DependentUpon>MoChuongTrinh.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea23362e-493d-4e9c-b031-de766f63fcfd</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>bb0ca587-fc8f-4327-86b5-c72178ffb540</id>
     </Compile>
@@ -128,6 +140,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>70aec1cf-e5c6-45a6-bbd7-87cd8eb85aec</id>
+    </None>
+    <None Include="MoChuongTrinh.rxrec">
+      <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
+      <id>64db9c5d-2f80-4a37-84ae-7549527215ab</id>
+      <recordtableid>cb1e53f4-b05b-4773-a06c-21e76810fa30</recordtableid>
     </None>
     <None Include="QLTQRepository.rximg">
       <BoundTo>5ba839ef-0ee6-480e-9fdb-97925d1694e5</BoundTo>
